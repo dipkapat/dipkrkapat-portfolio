@@ -8,9 +8,9 @@ Your resume supports 18+ years in web/UI work, 5+ years of React-focused fronten
 
 The references that work best for your direction also lead with a **strong positioning statement + selected work + proof**, rather than making the visitor dig through a CV. Ronald Rosales, Shaun Scholtz, Savita Singh, and Bogdan Goncharenko are particularly useful models for this. ([Ronald Rosales](https://ronaldrosales.com/ "Ronald Rosales"))
 
-# Portfolio Website — Step-by-Step Content Outline
+# Portfolio Website - Step-by-Step Content Outline
 
-## 01. HERO — “Who I Am in 5 Seconds”
+## 01. HERO - “Who I Am in 5 Seconds”
 
 This is the most important section.
 
@@ -54,7 +54,7 @@ This follows the strongest pattern I found across your references: clear positio
 
 ---
 
-# 02. “WHAT I DO” — Your Value Proposition
+# 02. “WHAT I DO” - Your Value Proposition
 
 Do **not** call this simply “Skills.”
 
@@ -66,15 +66,15 @@ Instead, make it about what you actually deliver.
 
 ### Three capability pillars
 
-#### 01 — Product UI/UX
+#### 01 - Product UI/UX
 
 Design complex interfaces, workflows, dashboards, responsive experiences and reusable systems.
 
-#### 02 — Frontend Product Development
+#### 02 - Frontend Product Development
 
 Transform designs into responsive, component-driven interfaces using React, Next.js, Tailwind CSS and modern UI libraries.
 
-#### 03 — AI-Assisted Product Building
+#### 03 - AI-Assisted Product Building
 
 Use Claude Code, LLM tools and AI-assisted workflows to accelerate exploration, implementation and design-to-code execution.
 
@@ -82,13 +82,13 @@ These are directly supported by your resume.
 
 ---
 
-# 03. SELECTED WORK — The Main Portfolio Section
+# 03. SELECTED WORK - The Main Portfolio Section
 
 This should become the **visual centerpiece of the website**.
 
 Your projects already provide a strong mix:
 
-### Featured Project 01 — PulseMetrics
+### Featured Project 01 - PulseMetrics
 
 **B2B SaaS Analytics Dashboard**
 
@@ -110,11 +110,11 @@ React · Next.js · Tailwind CSS · shadcn/ui · Recharts · Framer Motion
 
 **View Project →**
 
-Your live project is currently presented as a B2B SaaS enterprise dashboard experience. ([PulseMetrics](https://pulse-metrics-beta.vercel.app/ "PulseMetrics — B2B SaaS Analytics Dashboard"))
+Your live project is currently presented as a B2B SaaS enterprise dashboard experience. ([PulseMetrics](https://pulse-metrics-beta.vercel.app/ "PulseMetrics - B2B SaaS Analytics Dashboard"))
 
 ---
 
-### Featured Project 02 — AI Content Studio
+### Featured Project 02 - AI Content Studio
 
 **AI-Powered Content Generation Interface**
 
@@ -140,7 +140,7 @@ This is much stronger than simply saying “AI project.”
 
 ---
 
-### Featured Project 03 — VetBook
+### Featured Project 03 - VetBook
 
 **Veterinary Practice Management Platform**
 
@@ -172,7 +172,7 @@ This helps prove that you can handle more than attractive landing pages.
 
 ---
 
-### Featured Project 04 — LoanLens
+### Featured Project 04 - LoanLens
 
 **Multi-Country Loan Calculator**
 
@@ -202,7 +202,7 @@ The live product includes loan types, country-specific parameters, payment calcu
 
 ---
 
-### Featured Project 05 — Saint’s Paradise
+### Featured Project 05 - Saint’s Paradise
 
 **Premium Restaurant / Hospitality Website**
 
@@ -291,19 +291,19 @@ Instead:
 
 Then tell the story in three phases.
 
-### Phase 01 — Web Design
+### Phase 01 - Web Design
 
 **2006–2012**
 
 Web design, visual layouts, HTML/CSS and early production interfaces.
 
-### Phase 02 — UI/UX + Responsive Product Interfaces
+### Phase 02 - UI/UX + Responsive Product Interfaces
 
 **2012–2020**
 
 Enterprise interfaces, mobile/web UI, responsive systems, wireframes and high-fidelity design.
 
-### Phase 03 — Product UI/UX + React Frontend
+### Phase 03 - Product UI/UX + React Frontend
 
 **2020–Present**
 
@@ -359,7 +359,7 @@ Then show the AI layer across it:
 
 ### Content message
 
-**I use AI as a force multiplier—not as a substitute for design thinking.**
+**I use AI as a force multiplier-not as a substitute for design thinking.**
 
 Then briefly explain:
 
@@ -385,21 +385,21 @@ This section should be brief but senior-level.
 
 Instead of another generic “My Process,” use principles.
 
-### 01 — Understand the system before designing the screen.
+### 01 - Understand the system before designing the screen.
 
-### 02 — Reduce complexity before adding visual polish.
+### 02 - Reduce complexity before adding visual polish.
 
-### 03 — Design components, not isolated pages.
+### 03 - Design components, not isolated pages.
 
-### 04 — Think about implementation while designing.
+### 04 - Think about implementation while designing.
 
-### 05 — Use AI to accelerate execution, not replace judgment.
+### 05 - Use AI to accelerate execution, not replace judgment.
 
 This echoes what several of your references do well: they communicate **how the person thinks**, not merely what software they know. Ronald's positioning around systems thinking and shipped products is especially relevant. ([Ronald Rosales](https://ronaldrosales.com/ "Ronald Rosales"))
 
 ---
 
-# 09. ABOUT — The Human Story
+# 09. ABOUT - The Human Story
 
 Only now should you tell your personal story.
 
@@ -435,43 +435,43 @@ A compact timeline rather than a full CV.
 
 ### 2006
 
-Skill Hut — Web Designer
+Skill Hut - Web Designer
 
 ### 2007–2008
 
-Shiv Shakti — Web Designer
+Shiv Shakti - Web Designer
 
 ### 2008–2010
 
-NetWest Solutions — Web Designer
+NetWest Solutions - Web Designer
 
 ### 2010–2011
 
-DPS Technologies — Web Designer
+DPS Technologies - Web Designer
 
 ### 2011
 
-Designclature — Web Designer
+Designclature - Web Designer
 
 ### 2012
 
-Ericsson / Link Quest Telecom — HTML/CSS Developer
+Ericsson / Link Quest Telecom - HTML/CSS Developer
 
 ### 2012–2014
 
-Max Mobility — Sr. Web/UI Designer
+Max Mobility - Sr. Web/UI Designer
 
 ### 2014–2018
 
-Apex Division — Sr. Web/UI Designer
+Apex Division - Sr. Web/UI Designer
 
 ### 2018–2019
 
-Vawsum Schools — HTML/Web Designer
+Vawsum Schools - HTML/Web Designer
 
 ### 2020–Present
 
-Adhyan Digital — Sr. Frontend Developer / UI/UX
+Adhyan Digital - Sr. Frontend Developer / UI/UX
 
 Your resume supports this history and dates.
 
@@ -558,47 +558,47 @@ Each project should eventually have its own case-study page.
 
 Use the same structure every time:
 
-### 01 — Overview
+### 01 - Overview
 
 What is the product?
 
-### 02 — Problem
+### 02 - Problem
 
 What problem does it solve?
 
-### 03 — Users
+### 03 - Users
 
 Who is it for?
 
-### 04 — My Role
+### 04 - My Role
 
 What did you personally design/build?
 
-### 05 — Product Structure
+### 05 - Product Structure
 
 How is the experience organized?
 
-### 06 — Key UX Decisions
+### 06 - Key UX Decisions
 
 What decisions did you make?
 
-### 07 — UI System
+### 07 - UI System
 
 Typography, layout, components, states.
 
-### 08 — Interaction
+### 08 - Interaction
 
 Animation, transitions, feedback, edge cases.
 
-### 09 — Frontend
+### 09 - Frontend
 
 How the design translated into implementation.
 
-### 10 — Result
+### 10 - Result
 
 What did the final product achieve or demonstrate?
 
-### 11 — Reflection
+### 11 - Reflection
 
 What would you improve next?
 
@@ -618,7 +618,7 @@ Possible future content:
 
 Then 2–4 concise testimonials.
 
-This type of social proof is used effectively on more senior portfolios such as Bogdan Goncharenko's. ([Bogdan Goncharenko](https://www.bogdan.vision/en "Bogdan Goncharenko — Product Designer"))
+This type of social proof is used effectively on more senior portfolios such as Bogdan Goncharenko's. ([Bogdan Goncharenko](https://www.bogdan.vision/en "Bogdan Goncharenko - Product Designer"))
 
 ---
 
@@ -666,27 +666,27 @@ Email · LinkedIn · Resume
 
 The actual homepage sequence I recommend is:
 
-**01 — Hero**  
+**01 - Hero**  
 ↓  
-**02 — Credibility / Numbers**  
+**02 - Credibility / Numbers**  
 ↓  
-**03 — What I Do**  
+**03 - What I Do**  
 ↓  
-**04 — Featured Work**  
+**04 - Featured Work**  
 ↓  
-**05 — 25+ Enterprise Modules**  
+**05 - 25+ Enterprise Modules**  
 ↓  
-**06 — Design → Code → AI**  
+**06 - Design → Code → AI**  
 ↓  
-**07 — How I Think**  
+**07 - How I Think**  
 ↓  
-**08 — Experience**  
+**08 - Experience**  
 ↓  
-**09 — Toolkit**  
+**09 - Toolkit**  
 ↓  
-**10 — About**  
+**10 - About**  
 ↓  
-**11 — Contact CTA**
+**11 - Contact CTA**
 
 This is deliberately closer to the narrative style used by stronger senior portfolios than generic template layouts. Shaun leads with positioning and experience; Ronald leads with systems thinking + shipped work; Savita leads with specialization + proof + case studies; Bogdan leads with selected cases and measurable outcomes. ([Shaun Scholtz](https://shaunscholtz.com/ "Shaun Scholtz / Product Design Leader"))
 

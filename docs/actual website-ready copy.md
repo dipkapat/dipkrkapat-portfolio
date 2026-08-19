@@ -1,4 +1,4 @@
-# 01 — HERO
+# 01 - HERO
 
 ### Eyebrow
 
@@ -10,7 +10,7 @@
 
 ### Supporting copy
 
-**18+ years of experience across web design, product UI/UX, and frontend development—combining product thinking, visual precision, and modern frontend technology to create clear, responsive, production-ready experiences.**
+**18+ years of experience across web design, product UI/UX, and frontend development-combining product thinking, visual precision, and modern frontend technology to create clear, responsive, production-ready experiences.**
 
 ### Primary CTA
 
@@ -26,7 +26,7 @@
 
 ---
 
-# 02 — INTRODUCTION
+# 02 - INTRODUCTION
 
 ### Heading
 
@@ -38,29 +38,29 @@ I work at the intersection of **UI/UX design and frontend development**, turning
 
 My experience spans everything from websites and responsive interfaces to complex enterprise software, dashboards, workflow systems, and AI-powered products.
 
-Today, I combine **Figma, React, Next.js, Tailwind CSS, modern component libraries, and AI-assisted development tools** to move from concept to implementation faster—without compromising usability or visual quality.
+Today, I combine **Figma, React, Next.js, Tailwind CSS, modern component libraries, and AI-assisted development tools** to move from concept to implementation faster-without compromising usability or visual quality.
 
 ---
 
-# 03 — WHAT I DO
+# 03 - WHAT I DO
 
 ### Heading
 
 **What I bring to a product team**
 
-### 01 — Product UI/UX
+### 01 - Product UI/UX
 
 **Designing interfaces that make complex products easier to understand and use.**
 
 Wireframes, user flows, high-fidelity UI, responsive layouts, interaction patterns, dashboards, workflows, and product experiences.
 
-### 02 — Frontend Development
+### 02 - Frontend Development
 
 **Turning design into scalable, production-ready interfaces.**
 
 React, Next.js, Tailwind CSS, component-based UI, responsive implementation, interaction states, cross-browser compatibility, and design-to-code conversion.
 
-### 03 — AI-Assisted Development
+### 03 - AI-Assisted Development
 
 **Using AI to accelerate the path from idea to interface.**
 
@@ -68,7 +68,7 @@ Claude Code and LLM-powered workflows help me explore, structure, build, refine,
 
 ---
 
-# 04 — SELECTED WORK
+# 04 - SELECTED WORK
 
 ### Eyebrow
 
@@ -80,11 +80,11 @@ Claude Code and LLM-powered workflows help me explore, structure, build, refine,
 
 ### Intro
 
-Each project explores a different product challenge—from SaaS analytics and AI interfaces to operational systems, financial tools, and conversion-focused websites.
+Each project explores a different product challenge-from SaaS analytics and AI interfaces to operational systems, financial tools, and conversion-focused websites.
 
 ---
 
-## PROJECT 01 — PULSEMETRICS
+## PROJECT 01 - PULSEMETRICS
 
 ### Label
 
@@ -114,7 +114,7 @@ The interface combines dashboards, charts, tables, filters, date ranges, respons
 
 ---
 
-# PROJECT 02 — AI CONTENT GENERATION TOOL
+# PROJECT 02 - AI CONTENT GENERATION TOOL
 
 ### Label
 
@@ -144,7 +144,7 @@ The focus was on making an inherently complex AI workflow feel simple, predictab
 
 ---
 
-# PROJECT 03 — VETBOOK
+# PROJECT 03 - VETBOOK
 
 ### Label
 
@@ -174,7 +174,7 @@ The design prioritizes fast navigation, clear information hierarchy, and efficie
 
 ---
 
-# PROJECT 04 — LOANLENS
+# PROJECT 04 - LOANLENS
 
 ### Label
 
@@ -204,7 +204,7 @@ The experience focuses on progressive disclosure, clear data presentation, and r
 
 ---
 
-# PROJECT 05 — SAINT'S PARADISE CAFETERIA
+# PROJECT 05 - SAINT'S PARADISE CAFETERIA
 
 ### Label
 
@@ -234,7 +234,7 @@ The experience combines bold typography, immersive imagery, interactive content,
 
 ---
 
-# 05 — ENTERPRISE EXPERIENCE
+# 05 - ENTERPRISE EXPERIENCE
 
 This should be one of the strongest sections on the entire website.
 
@@ -264,7 +264,7 @@ Your resume explicitly documents this 25+ module product experience and the tech
 
 ---
 
-# 06 — DESIGN TO CODE
+# 06 - DESIGN TO CODE
 
 ### Eyebrow
 
@@ -314,7 +314,7 @@ Test, debug, iterate, and improve the final experience.
 
 ---
 
-# 07 — AI-ASSISTED WORKFLOW
+# 07 - AI-ASSISTED WORKFLOW
 
 ### Eyebrow
 
@@ -326,7 +326,7 @@ Test, debug, iterate, and improve the final experience.
 
 ### Copy
 
-I use AI-assisted development tools as part of my product workflow—not as a replacement for design thinking, but as a way to move faster from exploration to execution.
+I use AI-assisted development tools as part of my product workflow-not as a replacement for design thinking, but as a way to move faster from exploration to execution.
 
 Tools such as **Claude Code and LLM-powered development workflows** help accelerate implementation, iteration, component creation, and design-to-code conversion.
 
@@ -350,7 +350,7 @@ Debug, simplify, and continuously polish the experience.
 
 ---
 
-# 08 — DESIGN PRINCIPLES
+# 08 - DESIGN PRINCIPLES
 
 ### Heading
 
@@ -384,11 +384,11 @@ A strong interface needs to survive the transition from Figma to production.
 
 **Details create trust.**
 
-States, spacing, hierarchy, feedback, transitions, and responsiveness are part of the product—not finishing touches.
+States, spacing, hierarchy, feedback, transitions, and responsiveness are part of the product-not finishing touches.
 
 ---
 
-# 09 — EXPERIENCE
+# 09 - EXPERIENCE
 
 ### Eyebrow
 
@@ -428,7 +428,7 @@ Your resume documents this progression across your roles from 2006 through your 
 
 ---
 
-# 10 — TECHNOLOGY
+# 10 - TECHNOLOGY
 
 ### Heading
 
@@ -458,7 +458,7 @@ These are based on the technology/tooling listed in your resume.
 
 ---
 
-# 11 — ABOUT
+# 11 - ABOUT
 
 ### Eyebrow
 
@@ -476,13 +476,13 @@ What started with website design and frontend implementation evolved into UI/UX 
 
 Over the years, I have worked across visual design, wireframing, prototyping, frontend development, design systems, and production interfaces.
 
-Today, I bring those disciplines together—designing products with a strong understanding of how they should work, how they should look, and how they should be built.
+Today, I bring those disciplines together-designing products with a strong understanding of how they should work, how they should look, and how they should be built.
 
 My current focus is the intersection of **product UI/UX, frontend development, and AI-assisted workflows**.
 
 ---
 
-# 12 — WHY WORK WITH ME
+# 12 - WHY WORK WITH ME
 
 ### Heading
 
@@ -507,7 +507,7 @@ AI-assisted tools combined with established design and development practices.
 
 ---
 
-# 13 — CONTACT CTA
+# 13 - CONTACT CTA
 
 Do not make this another generic “Let's connect” section.
 
@@ -533,7 +533,7 @@ Whether you need a new product interface, a better UX for an existing system, or
 
 ---
 
-# 14 — FOOTER
+# 14 - FOOTER
 
 ### Name
 

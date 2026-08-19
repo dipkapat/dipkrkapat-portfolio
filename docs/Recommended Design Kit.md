@@ -1,6 +1,6 @@
 # Recommended Design Kit
 
-## **“Editorial Product” — Portfolio Design System v1.0**
+## **“Editorial Product” - Portfolio Design System v1.0**
 
 The visual idea:
 
@@ -46,7 +46,7 @@ This is especially appropriate because your actual differentiator is your combin
 
 I recommend a **warm off-white + near-black + electric blue accent** system.
 
-### Light Theme — Primary
+### Light Theme - Primary
 
 | Token          | Value     | Usage                     |
 | -------------- | --------- | ------------------------- |
@@ -63,7 +63,7 @@ I recommend a **warm off-white + near-black + electric blue accent** system.
 | Warning        | `#B7791F` | Warning states            |
 | Error          | `#C53030` | Error states              |
 
-### Dark Theme — Secondary
+### Dark Theme - Secondary
 
 | Token            | Value     |
 | ---------------- | --------- |
@@ -114,7 +114,7 @@ Use very selectively for emphasis.
 For example:
 
 > **I design complex digital products**  
-> *and build the interfaces that bring them to life.*
+> _and build the interfaces that bring them to life._
 
 The serif can appear on only a few key moments.
 
@@ -805,15 +805,15 @@ For your level of portfolio, restraint is better than gimmicks.
 
 Your portfolio should contain three image types.
 
-### 01 — Product UI
+### 01 - Product UI
 
 Large screenshots and detailed UI crops.
 
-### 02 — Process
+### 02 - Process
 
 Occasional Figma frames, wireframes, system diagrams.
 
-### 03 — Personal
+### 03 - Personal
 
 One strong professional portrait.
 

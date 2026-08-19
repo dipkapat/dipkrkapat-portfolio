@@ -566,7 +566,7 @@ Do not sacrifice usability or performance for visual effects.
 
 Do not leave major sections as pseudocode or describe what should be implemented instead of implementing it.
 
-Ensure the final result feels intentionally designed for a UI/UX Website Engineer and Frontend Developer—not generated from a generic portfolio template.
+Ensure the final result feels intentionally designed for a UI/UX Website Engineer and Frontend Developer-not generated from a generic portfolio template.
 
 # ================================================== 17. FINAL QA
 

@@ -1,6 +1,6 @@
-# Dip Kumar Kapat — Portfolio
+# Dip Kumar Kapat - Portfolio
 
-Personal portfolio for Dip Kumar Kapat — Senior UI/UX Designer & Frontend Product Builder.
+Personal portfolio for Dip Kumar Kapat - Senior UI/UX Designer & Frontend Product Builder.
 
 A single-page narrative homepage plus per-project case studies, built with Next.js 16 (App Router), Tailwind CSS v4, and Framer Motion.
 
@@ -31,33 +31,33 @@ npm run build       # production build
 
 ## Environment Variables
 
-| Variable | Required | Purpose |
-| --- | --- | --- |
-| `RESEND_API_KEY` | For the contact form | Resend API key for the `/api/contact` route |
-| `CONTACT_FORM_FROM_EMAIL` | For the contact form | Verified sender address in Resend |
-| `CONTACT_FORM_TO_EMAIL` | For the contact form | Where inquiries are delivered (defaults to the site email) |
-| `NEXT_PUBLIC_ANALYTICS_PROVIDER` | No | Set to `none` (default) or a provider name; wiring lives in `src/lib/analytics.ts` |
+| Variable                         | Required             | Purpose                                                                            |
+| -------------------------------- | -------------------- | ---------------------------------------------------------------------------------- |
+| `RESEND_API_KEY`                 | For the contact form | Resend API key for the `/api/contact` route                                        |
+| `CONTACT_FORM_FROM_EMAIL`        | For the contact form | Verified sender address in Resend                                                  |
+| `CONTACT_FORM_TO_EMAIL`          | For the contact form | Where inquiries are delivered (defaults to the site email)                         |
+| `NEXT_PUBLIC_ANALYTICS_PROVIDER` | No                   | Set to `none` (default) or a provider name; wiring lives in `src/lib/analytics.ts` |
 
-The site runs and builds with none of these set — the contact form falls back to a
+The site runs and builds with none of these set - the contact form falls back to a
 clear "not configured" message instead of failing silently.
 
 ## Content
 
 All copy and data live in `src/data/`:
 
-- `site.ts` — name, roles, contact details, nav links, inquiry types
-- `projects.ts` — single typed source driving both homepage cards and `/work/[slug]` case-study pages
+- `site.ts` - name, roles, contact details, nav links, inquiry types
+- `projects.ts` - single typed source driving both homepage cards and `/work/[slug]` case-study pages
 - `experience.ts`, `skills.ts`, `services.ts`, `modules.ts`, `testimonials.ts`
 
 ## Replacing Placeholders
 
 The site ships with clearly-labeled placeholders. Swap them when final assets are ready:
 
-1. **Project thumbnails** — replace the generated SVGs in `public/work/` with real images. Update the `image` field in `src/data/projects.ts` (an object with `src`, `alt`, and optional `caption`).
-2. **Portrait / avatar** — referenced from the About section; add the file to `public/` and update the reference in `src/components/sections/About.tsx`.
-3. **Resume PDF** — drop the PDF at `public/resume/Dip-Kumar-Kapat-Resume.pdf` (see `public/resume/README.md`).
-4. **Testimonials** — the testimonials section renders only when entries exist in `src/data/testimonials.ts`. Add real quotes there to enable it.
-5. **Analytics** — implement the hook in `src/lib/analytics.ts` when a provider is chosen.
+1. **Project thumbnails** - replace the generated SVGs in `public/work/` with real images. Update the `image` field in `src/data/projects.ts` (an object with `src`, `alt`, and optional `caption`).
+2. **Portrait / avatar** - referenced from the About section; add the file to `public/` and update the reference in `src/components/sections/About.tsx`.
+3. **Resume PDF** - drop the PDF at `public/resume/Dip-Kumar-Kapat-Resume.pdf` (see `public/resume/README.md`).
+4. **Testimonials** - the testimonials section renders only when entries exist in `src/data/testimonials.ts`. Add real quotes there to enable it.
+5. **Analytics** - implement the hook in `src/lib/analytics.ts` when a provider is chosen.
 
 ## Project Structure
 

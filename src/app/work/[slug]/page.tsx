@@ -6,55 +6,57 @@ import { CaseStudy } from "@/components/sections/CaseStudy";
 import { creativeWorkJsonLd } from "@/lib/seo";
 
 interface WorkPageProps {
-  params: Promise<{ slug: string }>;
+	params: Promise<{ slug: string }>;
 }
 
 export function generateStaticParams() {
-  return projects.map((project) => ({ slug: project.slug }));
+	return projects.map((project) => ({ slug: project.slug }));
 }
 
 export async function generateMetadata({
-  params,
+	params,
 }: WorkPageProps): Promise<Metadata> {
-  const { slug } = await params;
-  const project = getProject(slug);
-  if (!project) return {};
+	const { slug } = await params;
+	const project = getProject(slug);
+	if (!project) return {};
 
-  const url = `${siteConfig.url}/work/${project.slug}`;
+	const url = `${siteConfig.url}/work/${project.slug}`;
 
-  return {
-    title: `${project.name} — ${project.category}`,
-    description: project.description,
-    alternates: { canonical: url },
-    openGraph: {
-      type: "website",
-      url,
-      siteName: siteConfig.name,
-      title: `${project.name} — ${project.category}`,
-      description: project.description,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${project.name} — ${project.category}`,
-      description: project.description,
-    },
-  };
+	return {
+		title: `${project.name} - ${project.category}`,
+		description: project.description,
+		alternates: { canonical: url },
+		openGraph: {
+			type: "website",
+			url,
+			siteName: siteConfig.name,
+			title: `${project.name} - ${project.category}`,
+			description: project.description,
+		},
+		twitter: {
+			card: "summary_large_image",
+			title: `${project.name} - ${project.category}`,
+			description: project.description,
+		},
+	};
 }
 
 export default async function WorkPage({ params }: WorkPageProps) {
-  const { slug } = await params;
-  const project = getProject(slug);
-  if (!project) notFound();
+	const { slug } = await params;
+	const project = getProject(slug);
+	if (!project) notFound();
 
-  const { next } = getAdjacentProjects(slug);
+	const { next } = getAdjacentProjects(slug);
 
-  return (
-    <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: creativeWorkJsonLd(project) }}
-      />
-      <CaseStudy project={project} nextProject={next} />
-    </>
-  );
+	return (
+		<>
+			<script
+				type="application/ld+json"
+				dangerouslySetInnerHTML={{
+					__html: creativeWorkJsonLd(project),
+				}}
+			/>
+			<CaseStudy project={project} nextProject={next} />
+		</>
+	);
 }

@@ -1,4 +1,4 @@
-# Dip Kumar Kapat — Portfolio Website Design Spec
+# Dip Kumar Kapat - Portfolio Website Design Spec
 
 **Date:** 2026-08-19
 **Status:** Approved
@@ -11,58 +11,58 @@
 3. Showcase best projects and demonstrate how the owner thinks and works.
 4. Establish a memorable, credible personal brand.
 
-Primary audiences: employers, technical and design hiring managers, recruiters, potential freelance clients. The site must communicate who they are, what they specialize in, what value they provide, quality of work, capabilities, and how to hire/contact them — within a 30–60 second evaluation window.
+Primary audiences: employers, technical and design hiring managers, recruiters, potential freelance clients. The site must communicate who they are, what they specialize in, what value they provide, quality of work, capabilities, and how to hire/contact them - within a 30–60 second evaluation window.
 
 ## 2. Positioning & Message
 
 - **Identity:** Senior UI/UX Designer & Frontend Product Builder
 - **Hero message:** "I design complex digital products and build the interfaces that bring them to life."
 - **Proof strip:** 18+ years experience · 25+ enterprise modules · React · Next.js · Tailwind CSS · AI-assisted development
-- **Central narrative:** one integrated identity — design and frontend execution in a single workflow — not "two separate jobs."
+- **Central narrative:** one integrated identity - design and frontend execution in a single workflow - not "two separate jobs."
 
-## 3. Design Direction — "Editorial Product"
+## 3. Design Direction - "Editorial Product"
 
 Swiss editorial discipline + modern SaaS interface + subtle creative motion. Typography does the talking; restrained color, whitespace, composition, and purposeful motion carry the premium feel.
 
 ### 3.1 Color System (light-first with dark mode)
 
-| Token | Light | Dark |
-|---|---|---|
-| Background | `#F5F5F2` | `#0D0D0D` |
-| Surface | `#FFFFFF` | `#151515` |
-| Surface muted | `#ECECE8` | `#1C1C1C` |
-| Text primary | `#111111` | `#F5F5F0` |
-| Text secondary | `#5F5F5A` | `#A5A5A0` |
-| Text tertiary | `#898985` | `#6E6E6A` |
-| Border | `#D9D9D4` | `#292929` |
-| Accent | `#2563EB` | `#4D7CFE` |
-| Accent soft | `#E8F0FF` | `#1A2B4D` |
+| Token                     | Light                             | Dark            |
+| ------------------------- | --------------------------------- | --------------- |
+| Background                | `#F5F5F2`                         | `#0D0D0D`       |
+| Surface                   | `#FFFFFF`                         | `#151515`       |
+| Surface muted             | `#ECECE8`                         | `#1C1C1C`       |
+| Text primary              | `#111111`                         | `#F5F5F0`       |
+| Text secondary            | `#5F5F5A`                         | `#A5A5A0`       |
+| Text tertiary             | `#898985`                         | `#6E6E6A`       |
+| Border                    | `#D9D9D4`                         | `#292929`       |
+| Accent                    | `#2563EB`                         | `#4D7CFE`       |
+| Accent soft               | `#E8F0FF`                         | `#1A2B4D`       |
 | Success / Warning / Error | `#16803C` / `#B7791F` / `#C53030` | adjusted for AA |
 
 Do not use 5–6 accent colors. Project screenshots provide visual variety; the portfolio stays disciplined.
 
 ### 3.2 Typography
 
-- **Instrument Sans** — nav, body, buttons, metadata, project descriptions, UI
-- **Instrument Serif** — selective display emphasis (hero accent lines, key moments)
-- **JetBrains Mono** — project numbers, technology tags, dates, metadata, small technical labels, process diagrams
+- **Instrument Sans** - nav, body, buttons, metadata, project descriptions, UI
+- **Instrument Serif** - selective display emphasis (hero accent lines, key moments)
+- **JetBrains Mono** - project numbers, technology tags, dates, metadata, small technical labels, process diagrams
 
 Loaded via `next/font` with `display: swap`.
 
 ### 3.3 Type Scale (desktop / mobile)
 
-| Style | Size | Weight |
-|---|---|---|
-| Hero display | 80px / 48px | 500 |
-| H1 | 64px / 40px | 500 |
-| H2 | 48px / 34px | 500 |
-| H3 | 32px | 600 |
-| H4 | 24px | 600 |
-| Body large | 20px | 400 |
-| Body | 17px / 16px | 400 |
-| Small | 14px | 400 |
-| Metadata | 12px | 600 |
-| Navigation | 14px | 500 |
+| Style        | Size        | Weight |
+| ------------ | ----------- | ------ |
+| Hero display | 80px / 48px | 500    |
+| H1           | 64px / 40px | 500    |
+| H2           | 48px / 34px | 500    |
+| H3           | 32px        | 600    |
+| H4           | 24px        | 600    |
+| Body large   | 20px        | 400    |
+| Body         | 17px / 16px | 400    |
+| Small        | 14px        | 400    |
+| Metadata     | 12px        | 600    |
+| Navigation   | 14px        | 500    |
 
 Typographic detail: display `-0.045em`, H1/H2 `-0.035em`, body `-0.01em`, uppercase labels `+0.08em`.
 
@@ -120,7 +120,7 @@ Real content supplied by the owner is used directly: bio, five live projects (wi
 - Project thumbnails: styled placeholder compositions per project (documented swap-in path)
 - Professional portrait: placeholder slot in About
 - Resume: `public/resume/` placeholder + README instructions
-- Testimonials: **never fabricated** — component + data structure render only when populated
+- Testimonials: **never fabricated** - component + data structure render only when populated
 
 Copy rules: concise, confident, professional; outcomes over buzzwords.
 

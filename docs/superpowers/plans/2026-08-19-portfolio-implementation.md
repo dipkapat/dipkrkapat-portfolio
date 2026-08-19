@@ -2,7 +2,7 @@
 
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
-**Goal:** Production-ready portfolio for Dip Kumar Kapat — Senior UI/UX Designer & Frontend Product Builder — with a single-page narrative homepage, per-project case-study pages, a Resend-backed contact form, full SEO, and a light/dark "Editorial Product" design system.
+**Goal:** Production-ready portfolio for Dip Kumar Kapat - Senior UI/UX Designer & Frontend Product Builder - with a single-page narrative homepage, per-project case-study pages, a Resend-backed contact form, full SEO, and a light/dark "Editorial Product" design system.
 
 **Architecture:** Next.js 16 App Router, RSC-first. Typed data layer (`src/data/*.ts`) drives both homepage sections and `/work/[slug]` case-study pages via static generation. Client components are isolated to interactivity: navbar/theme toggle, mobile menu, project filtering, motion wrappers, and the contact form. Contact form posts to a server route handler that validates with zod and sends via Resend. Tailwind v4 CSS-first tokens define the design system; Framer Motion handles restrained motion with `prefers-reduced-motion` support.
 
@@ -25,9 +25,10 @@
 
 ---
 
-### Task 1: Project setup — deps, config, base layout, design tokens
+### Task 1: Project setup - deps, config, base layout, design tokens
 
 **Files:**
+
 - Modify: `package.json` (scripts `typecheck`)
 - Modify: `src/app/globals.css` (design tokens)
 - Modify: `src/app/layout.tsx` (fonts, metadata, html attrs)
@@ -44,18 +45,20 @@
 ### Task 2: Data layer + lib utilities
 
 **Files:**
+
 - Create: `src/data/site.ts`, `src/data/projects.ts`, `src/data/experience.ts`, `src/data/skills.ts`, `src/data/services.ts`, `src/data/modules.ts`, `src/data/principles.ts`, `src/data/testimonials.ts`, `src/data/socials.ts`, `src/types/index.ts`
 - Create: `src/lib/utils.ts` (cn helper), `src/lib/seo.ts` (JSON-LD builders), `src/lib/analytics.ts` (trackEvent no-op)
 
 - [ ] **Step 1:** Define shared types in `src/types/index.ts`: `Project`, `CaseStudy`, `Experience`, `SkillGroup`, `Service`, `Testimonial`, `Social`, `InquiryType`.
 - [ ] **Step 2:** Populate `src/data/site.ts` (name, role, email, location, nav links, hero copy) from docs (actual website-ready copy).
-- [ ] **Step 3:** `src/data/projects.ts` — 5 projects with all homepage + case-study fields (PulseMetrics, AI Content Studio, VetBook, LoanLens, Saint's Paradise) incl. live URLs, categories, stacks, image placeholders.
+- [ ] **Step 3:** `src/data/projects.ts` - 5 projects with all homepage + case-study fields (PulseMetrics, AI Content Studio, VetBook, LoanLens, Saint's Paradise) incl. live URLs, categories, stacks, image placeholders.
 - [ ] **Step 4:** Remaining data files from docs (experience timeline phases, skill groups, services, 25+ modules, 5 principles, empty testimonials array, socials).
 - [ ] **Step 5:** `cn`, `trackEvent`, JSON-LD helpers. `tsc --noEmit` clean.
 
 ### Task 3: UI primitives + motion wrappers
 
 **Files:**
+
 - Create: `src/components/ui/Container.tsx`, `Button.tsx`, `Badge.tsx`, `SectionHeading.tsx`, `Stat.tsx`, `TechTag.tsx`, `Divider.tsx`, `Card.tsx`
 - Create: `src/components/motion/Reveal.tsx`, `Stagger.tsx`
 
@@ -67,6 +70,7 @@
 ### Task 4: Theme provider, theme toggle, navbar, mobile menu, footer
 
 **Files:**
+
 - Create: `src/components/theme/ThemeProvider.tsx` (client; `next-themes`-free, class-based toggle), `src/components/theme/ThemeToggle.tsx`
 - Create: `src/components/layout/Navbar.tsx`, `src/components/layout/MobileMenu.tsx`, `src/components/layout/Footer.tsx`, `src/components/layout/SkipLink.tsx`
 - Modify: `src/app/layout.tsx` (wrap with provider; add navbar/footer + skip link)
@@ -80,12 +84,13 @@
 ### Task 5: Homepage sections (single page)
 
 **Files:**
+
 - Create: `src/components/sections/Hero.tsx`, `Introduction.tsx`, `WhatIDo.tsx`, `SelectedWork.tsx`, `Enterprise.tsx`, `DesignToCode.tsx`, `AIWorkflow.tsx`, `Principles.tsx`, `Experience.tsx`, `Technology.tsx`, `About.tsx`, `WhyWorkWithMe.tsx`, `ContactCTA.tsx`, `Testimonials.tsx` (render-only-if-data)
 - Modify: `src/app/page.tsx`
 
 - [ ] **Step 1:** `Hero`: eyebrow, serif headline, supporting copy, CTAs (View Selected Work / Get in Touch), proof strip, asymmetric 7/5 layout, subtle grid bg.
 - [ ] **Step 2:** `Introduction` + `WhatIDo` (3 pillars with numbered cards).
-- [ ] **Step 3:** `SelectedWork`: alternating 40/60 editorial cards, project meta (mono labels, role, stack), filtering (All/UI-UX/Frontend/WebApp/Website) — client filter with motion layout.
+- [ ] **Step 3:** `SelectedWork`: alternating 40/60 editorial cards, project meta (mono labels, role, stack), filtering (All/UI-UX/Frontend/WebApp/Website) - client filter with motion layout.
 - [ ] **Step 4:** `Enterprise` (25+ matrix, hover highlight), `DesignToCode` (pipeline), `AIWorkflow` (4 capabilities, calm system-diagram language).
 - [ ] **Step 5:** `Principles` (5), `Experience` (3-phase timeline), `Technology` (grouped), `About` (narrative + portrait placeholder), `WhyWorkWithMe` (3 proof points), `ContactCTA`, `Testimonials` (conditional).
 - [ ] **Step 6:** Compose `src/app/page.tsx` with section ids. Build passes.
@@ -93,6 +98,7 @@
 ### Task 6: Case-study pages
 
 **Files:**
+
 - Create: `src/app/work/[slug]/page.tsx`, `src/app/work/[slug]/layout.tsx`, `src/components/sections/CaseStudy.tsx`
 
 - [ ] **Step 1:** `generateStaticParams` from projects data; `generateMetadata` (async params). `notFound()` for unknown slug.
@@ -102,6 +108,7 @@
 ### Task 7: Contact form + API route
 
 **Files:**
+
 - Create: `src/components/forms/ContactForm.tsx`, `src/app/api/contact/route.ts`, `src/lib/validation.ts`, `src/lib/contact.ts`
 
 - [ ] **Step 1:** `src/lib/validation.ts` zod schemas (name, email, optional company, inquiry type enum, message min length).
@@ -112,6 +119,7 @@
 ### Task 8: SEO files + final wiring
 
 **Files:**
+
 - Create: `src/app/robots.ts`, `src/app/sitemap.ts`, `src/app/manifest.ts` (optional), `src/app/icon.svg` or keep favicon
 - Modify: `src/app/layout.tsx` (JSON-LD Person/WebSite), `src/app/work/[slug]/page.tsx` (CreativeWork JSON-LD)
 
@@ -122,6 +130,7 @@
 ### Task 9: Placeholders, README, env, QA
 
 **Files:**
+
 - Create: `README.md`, `public/resume/README.md` (placeholder note), placeholder project visuals in `public/work/`
 - Verify: full QA checklist
 
