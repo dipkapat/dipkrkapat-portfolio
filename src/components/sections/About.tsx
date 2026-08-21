@@ -57,24 +57,13 @@ export function About() {
 
 					<div className="lg:col-span-5">
 						<Reveal delay={0.1}>
-							<div className="flex aspect-[4/5] flex-col items-center justify-center rounded-md border border-dashed border-border-strong bg-surface text-center">
-								<p className="font-mono text-xs uppercase tracking-[0.12em] text-accent">
-									Portrait
-								</p>
-								<p className="mt-3 max-w-[220px] text-sm leading-relaxed text-text-tertiary">
-									Placeholder slot - replace with a
-									professional portrait in
-									<span className="font-mono text-text-secondary">
-										{" "}
-										src/app{" "}
-									</span>
-									or{" "}
-									<span className="font-mono text-text-secondary">
-										{" "}
-										public/
-									</span>
-									.
-								</p>
+							<div className="relative aspect-[4/5] overflow-hidden rounded-lg border border-accent/30 bg-surface">
+								<img
+									src="/images/profile1.jpg"
+									alt="Dip Kumar Kapat — Senior UI/UX Designer & Frontend Product Builder"
+									className="size-full object-cover transition-transform duration-700 ease-out hover:scale-105"
+								/>
+								<div className="absolute inset-0 border border-accent/20 pointer-events-none" aria-hidden="true" />
 							</div>
 						</Reveal>
 					</div>

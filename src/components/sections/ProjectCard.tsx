@@ -72,13 +72,13 @@ export function ProjectCard({ project, reversed }: ProjectCardProps) {
           className="group relative block overflow-hidden rounded-md border border-border transition-all duration-200 hover:border-border-strong"
           aria-label={`${project.name} case study`}
         >
-          <div className="aspect-[16/10] overflow-hidden bg-surface-muted">
+          <div className="relative h-[320px] lg:h-[420px] overflow-hidden bg-surface-muted">
             <Image
               src={project.image.src}
               alt={project.image.alt}
               width={project.image.width}
               height={project.image.height}
-              className="size-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+              className="w-full h-auto object-top transition-transform duration-700 ease-out group-hover:scale-[1.02]"
               sizes="(min-width: 1024px) 60vw, 100vw"
             />
           </div>

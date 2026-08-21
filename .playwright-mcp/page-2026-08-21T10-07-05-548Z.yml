@@ -1,0 +1,530 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - banner [ref=e3]:
+    - navigation "Main navigation" [ref=e4]:
+      - link "Dip Kumar Kapat - home" [ref=e5] [cursor=pointer]:
+        - /url: "#top"
+        - generic [ref=e6]: DIP KUMAR KAPAT
+        - generic [ref=e7]: UI/UX · Frontend · AI
+      - generic [ref=e8]:
+        - list [ref=e9]:
+          - listitem [ref=e10]:
+            - link "Work" [ref=e11] [cursor=pointer]:
+              - /url: "#work"
+          - listitem [ref=e12]:
+            - link "Capabilities" [ref=e13] [cursor=pointer]:
+              - /url: "#capabilities"
+          - listitem [ref=e14]:
+            - link "About" [ref=e15] [cursor=pointer]:
+              - /url: "#about"
+          - listitem [ref=e16]:
+            - link "Experience" [ref=e17] [cursor=pointer]:
+              - /url: "#experience"
+        - generic [ref=e18]:
+          - button "Switch to dark mode" [ref=e19]
+          - link "Let's Talk" [ref=e22] [cursor=pointer]:
+            - /url: "#contact"
+  - main [ref=e26]:
+    - generic [ref=e29]:
+      - generic [ref=e30]:
+        - paragraph [ref=e32]: Senior UI/UX Designer · Frontend Product Builder
+        - heading "I design complex digital products and build the interfaces that bring them to life." [level=1] [ref=e35]
+        - paragraph [ref=e37]: 18+ years across web design, product UI/UX, and frontend development - combining product thinking, visual precision, and modern frontend technology to create clear, responsive, production-ready experiences.
+        - generic [ref=e39]:
+          - link "View Selected Work" [ref=e40] [cursor=pointer]:
+            - /url: "#work"
+          - link "Get in Touch" [ref=e43] [cursor=pointer]:
+            - /url: "#contact"
+        - paragraph [ref=e45]: Currently building at Adhyan Digital · Kolkata, West Bengal, India
+      - generic [ref=e46]:
+        - generic [ref=e48]:
+          - generic [ref=e50]:
+            - paragraph [ref=e51]: 18+
+            - paragraph [ref=e52]: Years of experience
+          - generic [ref=e54]:
+            - paragraph [ref=e55]: 25+
+            - paragraph [ref=e56]: Enterprise modules
+          - generic [ref=e58]:
+            - paragraph [ref=e59]: React
+            - paragraph [ref=e60]: Next.js · TypeScript
+          - generic [ref=e62]:
+            - paragraph [ref=e63]: AI
+            - paragraph [ref=e64]: Assisted development
+        - generic [ref=e66]:
+          - generic [ref=e67]: Design
+          - generic [ref=e68]: →
+          - generic [ref=e69]: Build
+          - generic [ref=e70]: →
+          - generic [ref=e71]: Refine
+    - generic [ref=e79]:
+      - generic [ref=e81]:
+        - paragraph [ref=e82]: 01 / Introduction
+        - heading "Design thinking. Frontend execution. One workflow." [level=2] [ref=e83]
+      - generic [ref=e85]:
+        - paragraph [ref=e86]:
+          - text: I work at the intersection of
+          - strong [ref=e87]: UI/UX design
+          - text: and
+          - strong [ref=e88]: frontend development
+          - text: ", turning product requirements and high-fidelity designs into structured, responsive, and production-ready interfaces."
+        - generic [ref=e89]:
+          - paragraph [ref=e90]: My experience spans everything from websites and responsive interfaces to complex enterprise software, dashboards, workflow systems, and AI-powered products.
+          - paragraph [ref=e91]:
+            - text: Today, I combine
+            - strong [ref=e92]: Figma, React, Next.js, Tailwind CSS, modern component libraries, and AI-assisted development tools
+            - text: to move from concept to implementation faster - without compromising usability or visual quality.
+    - generic [ref=e94]:
+      - generic [ref=e95]:
+        - paragraph [ref=e96]: 02 / What I Do
+        - heading "What I bring to a product team" [level=2] [ref=e97]
+        - paragraph [ref=e98]: Three disciplines, one integrated workflow - from first wireframe to shipped interface.
+      - generic [ref=e99]:
+        - generic [ref=e101]:
+          - generic [ref=e102]: "01"
+          - heading "Product UI/UX" [level=3] [ref=e103]
+          - paragraph [ref=e104]: Designing interfaces that make complex products easier to understand and use. Wireframes, user flows, high-fidelity UI, responsive layouts, interaction patterns, dashboards, workflows, and product experiences.
+        - generic [ref=e106]:
+          - generic [ref=e107]: "02"
+          - heading "Frontend Development" [level=3] [ref=e108]
+          - paragraph [ref=e109]: Turning design into scalable, production-ready interfaces. React, Next.js, Tailwind CSS, component-based UI, responsive implementation, interaction states, cross-browser compatibility, and design-to-code conversion.
+        - generic [ref=e111]:
+          - generic [ref=e112]: "03"
+          - heading "AI-Assisted Development" [level=3] [ref=e113]
+          - paragraph [ref=e114]: Using AI to accelerate the path from idea to interface. Claude Code and LLM-powered workflows help explore, structure, build, refine, and iterate faster while keeping design judgment and product thinking at the center.
+    - generic [ref=e116]:
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - paragraph [ref=e119]: 03 / Selected Work
+          - heading "A selection of products, interfaces, and digital experiences." [level=2] [ref=e120]
+          - paragraph [ref=e121]: Each project explores a different product challenge - from SaaS analytics and AI interfaces to operational systems, financial tools, and conversion-focused websites.
+        - group "Filter projects" [ref=e122]:
+          - button "All" [pressed] [ref=e123]
+          - button "UI/UX" [ref=e124]
+          - button "Frontend" [ref=e125]
+          - button "Web Applications" [ref=e126]
+          - button "Websites" [ref=e127]
+      - generic [ref=e128]:
+        - article [ref=e130]:
+          - generic [ref=e131]:
+            - paragraph [ref=e132]: 01 / PulseMetrics
+            - paragraph [ref=e133]: B2B SaaS · Analytics Dashboard
+            - heading "Making complex business data easier to understand." [level=3] [ref=e134]
+            - paragraph [ref=e135]: PulseMetrics is a B2B analytics dashboard designed around clarity, information hierarchy, and efficient data exploration. The interface combines dashboards, charts, tables, filters, date ranges, responsive layouts, and meaningful interaction states into a cohesive SaaS experience.
+            - generic [ref=e136]:
+              - generic [ref=e137]:
+                - term [ref=e138]: Role
+                - definition [ref=e139]: UI/UX Design · Frontend Development · Interaction Design
+              - generic [ref=e140]:
+                - term [ref=e141]: Stack
+                - definition [ref=e142]: React · Next.js · Tailwind CSS · shadcn/ui · Recharts · Framer Motion
+            - generic [ref=e143]:
+              - link "View Case Study" [ref=e144] [cursor=pointer]:
+                - /url: /work/pulsemetrics
+              - link "Live Project" [ref=e148] [cursor=pointer]:
+                - /url: https://pulse-metrics-beta.vercel.app/
+          - link "PulseMetrics case study" [ref=e153] [cursor=pointer]:
+            - /url: /work/pulsemetrics
+            - img "PulseMetrics analytics dashboard interface preview" [ref=e155]
+        - article [ref=e157]:
+          - generic [ref=e158]:
+            - paragraph [ref=e159]: 02 / AI Content Studio
+            - paragraph [ref=e160]: AI Product · Conversational Interface
+            - heading "Designing a clearer interface for human–AI collaboration." [level=3] [ref=e161]
+            - paragraph [ref=e162]: An AI-powered content generation experience built around conversational interaction, streaming responses, workspace history, artifact previews, model settings, and usage visibility. The focus was on making an inherently complex AI workflow feel simple, predictable, and easy to navigate.
+            - generic [ref=e163]:
+              - generic [ref=e164]:
+                - term [ref=e165]: Role
+                - definition [ref=e166]: Product UI/UX · Interaction Design · Frontend Development
+              - generic [ref=e167]:
+                - term [ref=e168]: Stack
+                - definition [ref=e169]: React · Next.js · TypeScript · Tailwind CSS · shadcn/ui
+            - generic [ref=e170]:
+              - link "View Case Study" [ref=e171] [cursor=pointer]:
+                - /url: /work/ai-content-studio
+              - link "Live Project" [ref=e175] [cursor=pointer]:
+                - /url: https://ai-content-generation-tool-iota.vercel.app/
+          - link "AI Content Studio case study" [ref=e180] [cursor=pointer]:
+            - /url: /work/ai-content-studio
+            - img "AI Content Studio conversational interface preview" [ref=e182]
+        - article [ref=e184]:
+          - generic [ref=e185]:
+            - paragraph [ref=e186]: 03 / VetBook
+            - paragraph [ref=e187]: SaaS · Workflow Management
+            - heading "Designing operational software around real-world workflows." [level=3] [ref=e188]
+            - paragraph [ref=e189]: A veterinary appointment and practice-management interface designed to bring scheduling, patient workflows, activity, revenue, and operational information into a single experience. The design prioritizes fast navigation, clear information hierarchy, and efficient day-to-day task completion.
+            - generic [ref=e190]:
+              - generic [ref=e191]:
+                - term [ref=e192]: Role
+                - definition [ref=e193]: Product UI/UX · Frontend Development
+              - generic [ref=e194]:
+                - term [ref=e195]: Stack
+                - definition [ref=e196]: React · Next.js · Tailwind CSS · Component-based UI
+            - generic [ref=e197]:
+              - link "View Case Study" [ref=e198] [cursor=pointer]:
+                - /url: /work/vetbook
+              - link "Live Project" [ref=e202] [cursor=pointer]:
+                - /url: https://veterinary-appointment-booking.vercel.app/
+          - link "VetBook case study" [ref=e207] [cursor=pointer]:
+            - /url: /work/vetbook
+            - img "VetBook veterinary practice management interface preview" [ref=e209]
+        - article [ref=e211]:
+          - generic [ref=e212]:
+            - paragraph [ref=e213]: 04 / LoanLens
+            - paragraph [ref=e214]: FinTech · Interactive Data Experience
+            - heading "Turning financial complexity into an understandable experience." [level=3] [ref=e215]
+            - paragraph [ref=e216]: LoanLens is an interactive loan calculator designed to help users explore borrowing scenarios, repayment options, historical rates, and country-specific financial parameters. The experience focuses on progressive disclosure, clear data presentation, and reducing cognitive load when making financial decisions.
+            - generic [ref=e217]:
+              - generic [ref=e218]:
+                - term [ref=e219]: Role
+                - definition [ref=e220]: UI/UX Design · Interaction Design · Frontend Development
+              - generic [ref=e221]:
+                - term [ref=e222]: Stack
+                - definition [ref=e223]: React · Next.js · Tailwind CSS · Data Visualization
+            - generic [ref=e224]:
+              - link "View Case Study" [ref=e225] [cursor=pointer]:
+                - /url: /work/loanlens
+              - link "Live Project" [ref=e229] [cursor=pointer]:
+                - /url: https://loanlens-theta.vercel.app/
+          - link "LoanLens case study" [ref=e234] [cursor=pointer]:
+            - /url: /work/loanlens
+            - img "LoanLens multi-country loan calculator interface preview" [ref=e236]
+        - article [ref=e238]:
+          - generic [ref=e239]:
+            - paragraph [ref=e240]: 05 / Saint's Paradise Cafeteria
+            - paragraph [ref=e241]: Hospitality · Brand Experience
+            - heading "A digital experience designed to create desire before the first visit." [level=3] [ref=e242]
+            - paragraph [ref=e243]: A premium restaurant website designed around atmosphere, visual storytelling, menu discovery, and immediate conversion. The experience combines bold typography, immersive imagery, interactive content, strong calls to action, and a clear visual hierarchy to turn a simple restaurant website into a memorable brand experience.
+            - generic [ref=e244]:
+              - generic [ref=e245]:
+                - term [ref=e246]: Role
+                - definition [ref=e247]: UI/UX Design · Visual Direction · Frontend Development
+              - generic [ref=e248]:
+                - term [ref=e249]: Stack
+                - definition [ref=e250]: React · Next.js · Tailwind CSS · Motion
+            - generic [ref=e251]:
+              - link "View Case Study" [ref=e252] [cursor=pointer]:
+                - /url: /work/saints-paradise
+              - link "Live Project" [ref=e256] [cursor=pointer]:
+                - /url: https://saints-paradise-cafeteria.vercel.app/
+          - link "Saint's Paradise Cafeteria case study" [ref=e261] [cursor=pointer]:
+            - /url: /work/saints-paradise
+            - img "Saint's Paradise Cafeteria brand website preview" [ref=e263]
+    - generic [ref=e266]:
+      - generic [ref=e268]:
+        - generic [ref=e269]:
+          - paragraph [ref=e270]: 04 / Enterprise Product Experience
+          - heading "25+ modules. One complex product ecosystem." [level=2] [ref=e271]
+        - paragraph [ref=e272]: For an enterprise School Automation Software platform, I worked across the product ecosystem - from UI/UX design and prototyping through frontend implementation.
+        - paragraph [ref=e273]: The challenge was not designing individual screens. It was creating a consistent, scalable interface system across a large and interconnected product.
+        - paragraph [ref=e274]: 25+ production-ready modules · UI/UX → Frontend
+      - list [ref=e277]:
+        - listitem [ref=e278]: Academic
+        - listitem [ref=e279]: Attendance
+        - listitem [ref=e280]: Users
+        - listitem [ref=e281]: e-Contents
+        - listitem [ref=e282]: Marksheet
+        - listitem [ref=e283]: Student Analytics
+        - listitem [ref=e284]: Lesson Planner
+        - listitem [ref=e285]: Calendar & Events
+        - listitem [ref=e286]: Routine
+        - listitem [ref=e287]: Assignment
+        - listitem [ref=e288]: Study Materials
+        - listitem [ref=e289]: Admission
+        - listitem [ref=e290]: Fees
+        - listitem [ref=e291]: Leave Management
+        - listitem [ref=e292]: Employee Management
+        - listitem [ref=e293]: Payroll
+        - listitem [ref=e294]: Transport
+        - listitem [ref=e295]: Library
+        - listitem [ref=e296]: Accounts
+        - listitem [ref=e297]: Hostel
+        - listitem [ref=e298]: Visitor
+        - listitem [ref=e299]: Teacher Feedback
+        - listitem [ref=e300]: Certificate Management
+        - listitem [ref=e301]: Promotion
+        - listitem [ref=e302]: ID Card
+        - listitem [ref=e303]: Reports
+    - generic [ref=e305]:
+      - generic [ref=e307]:
+        - paragraph [ref=e308]: 05 / My Workflow
+        - heading "From design file to working product." [level=2] [ref=e309]
+        - paragraph [ref=e310]: I work across the boundary between design and implementation, which means I think about usability, visual quality, component structure, responsiveness, and technical feasibility together.
+      - list [ref=e312]:
+        - listitem [ref=e313]:
+          - generic [ref=e314]:
+            - generic [ref=e315]: "01"
+            - heading "Understand" [level=3] [ref=e316]
+            - paragraph [ref=e317]: Product requirements, users, workflows, and constraints.
+        - listitem [ref=e319]:
+          - generic [ref=e320]:
+            - generic [ref=e321]: "02"
+            - heading "Structure" [level=3] [ref=e322]
+            - paragraph [ref=e323]: Information architecture, user flows, wireframes, and interaction logic.
+        - listitem [ref=e325]:
+          - generic [ref=e326]:
+            - generic [ref=e327]: "03"
+            - heading "Design" [level=3] [ref=e328]
+            - paragraph [ref=e329]: High-fidelity UI, responsive layouts, reusable components, and visual systems.
+        - listitem [ref=e331]:
+          - generic [ref=e332]:
+            - generic [ref=e333]: "04"
+            - heading "Build" [level=3] [ref=e334]
+            - paragraph [ref=e335]: React, Next.js, Tailwind CSS, component libraries, and interactive states.
+        - listitem [ref=e337]:
+          - generic [ref=e338]:
+            - generic [ref=e339]: "05"
+            - heading "Refine" [level=3] [ref=e340]
+            - paragraph [ref=e341]: Test, debug, iterate, and improve the final experience.
+      - paragraph [ref=e343]: The goal is not simply to make a design look right. The goal is to make the product work right.
+    - generic [ref=e345]:
+      - generic [ref=e346]:
+        - paragraph [ref=e347]: 06 / AI + Product Development
+        - heading "AI accelerates the work. Design judgment drives it." [level=2] [ref=e348]
+        - paragraph [ref=e349]: I use AI-assisted development tools as part of my product workflow - not as a replacement for design thinking, but as a way to move faster from exploration to execution.
+      - generic [ref=e351]:
+        - paragraph [ref=e352]: workflow / pipeline
+        - generic [ref=e353]:
+          - generic [ref=e354]:
+            - generic [ref=e355]: IDEA
+            - generic [ref=e356]: →
+          - generic [ref=e357]:
+            - generic [ref=e358]: DESIGN
+            - generic [ref=e359]: →
+          - generic [ref=e360]:
+            - generic [ref=e361]: CLAUDE CODE
+            - generic [ref=e362]: →
+          - generic [ref=e363]:
+            - generic [ref=e364]: FRONTEND
+            - generic [ref=e365]: →
+          - generic [ref=e366]: ITERATE
+        - paragraph [ref=e368]: AI makes the workflow faster. Experience makes the decisions better.
+      - generic [ref=e370]:
+        - generic [ref=e371]:
+          - heading "Explore" [level=3] [ref=e372]
+          - paragraph [ref=e373]: Rapidly test ideas, structures, and interface directions.
+        - generic [ref=e374]:
+          - heading "Build" [level=3] [ref=e375]
+          - paragraph [ref=e376]: Translate designs into frontend components faster.
+        - generic [ref=e377]:
+          - heading "Iterate" [level=3] [ref=e378]
+          - paragraph [ref=e379]: Refine layouts, interactions, and responsive behavior.
+        - generic [ref=e380]:
+          - heading "Improve" [level=3] [ref=e381]
+          - paragraph [ref=e382]: Debug, simplify, and continuously polish the experience.
+    - generic [ref=e384]:
+      - generic [ref=e385]:
+        - paragraph [ref=e386]: 07 / Design Principles
+        - heading "How I approach product design" [level=2] [ref=e387]
+        - paragraph [ref=e388]: Principles, not process pages - the judgment behind the interface.
+      - generic [ref=e389]:
+        - generic [ref=e390]:
+          - text: "01"
+          - heading "Clarity before decoration." [level=3] [ref=e391]
+          - paragraph [ref=e392]: A good interface should make the next action obvious.
+        - generic [ref=e393]:
+          - text: "02"
+          - heading "Systems over screens." [level=3] [ref=e394]
+          - paragraph [ref=e395]: I design reusable patterns and components rather than isolated pages.
+        - generic [ref=e396]:
+          - text: "03"
+          - heading "Complexity should feel simple." [level=3] [ref=e397]
+          - paragraph [ref=e398]: The product can be sophisticated. The experience shouldn't feel complicated.
+        - generic [ref=e399]:
+          - text: "04"
+          - heading "Design with implementation in mind." [level=3] [ref=e400]
+          - paragraph [ref=e401]: A strong interface needs to survive the transition from Figma to production.
+        - generic [ref=e402]:
+          - text: "05"
+          - heading "Details create trust." [level=3] [ref=e403]
+          - paragraph [ref=e404]: States, spacing, hierarchy, feedback, transitions, and responsiveness are part of the product-not finishing touches.
+    - generic [ref=e406]:
+      - generic [ref=e407]:
+        - paragraph [ref=e408]: 08 / Career
+        - heading "18+ years of evolving with the web." [level=2] [ref=e409]
+        - paragraph [ref=e410]: My career started with web design and gradually evolved into UI/UX, responsive interface development, and product-focused frontend engineering.
+      - generic [ref=e411]:
+        - generic [ref=e413]:
+          - generic [ref=e414]: 2006–2012
+          - generic [ref=e415]:
+            - heading "Web Design & Frontend Foundations" [level=3] [ref=e416]
+            - paragraph [ref=e417]: Web design, visual layouts, HTML/CSS, responsive interfaces, and production websites.
+        - generic [ref=e419]:
+          - generic [ref=e420]: 2012–2020
+          - generic [ref=e421]:
+            - heading "UI/UX & Responsive Product Interfaces" [level=3] [ref=e422]
+            - paragraph [ref=e423]: Enterprise interfaces, mobile/web experiences, wireframes, prototypes, and high-fidelity UI.
+        - generic [ref=e425]:
+          - generic [ref=e426]: 2020–Present
+          - generic [ref=e427]:
+            - heading "Product UI/UX & Frontend Development" [level=3] [ref=e428]
+            - paragraph [ref=e429]: Complex product interfaces, React-based development, design-to-code workflows, enterprise software, and AI-assisted development.
+      - generic [ref=e431]:
+        - paragraph [ref=e432]: Current role
+        - generic [ref=e433]:
+          - heading "Senior Frontend Developer / UI/UX" [level=3] [ref=e434]
+          - generic [ref=e435]: ·
+          - paragraph [ref=e436]: Adhyan Digital Pvt. Ltd.
+        - paragraph [ref=e437]: Aug 2020 – Present · 25+ modules for an enterprise School Automation platform - Figma-to-React pipeline, design systems, and Framer Motion micro-interactions.
+    - generic [ref=e439]:
+      - generic [ref=e440]:
+        - paragraph [ref=e441]: 09 / Technology
+        - heading "The tools behind the work." [level=2] [ref=e442]
+        - paragraph [ref=e443]: Capability demonstrated through work first - the stack that carries it second.
+      - generic [ref=e444]:
+        - generic [ref=e446]:
+          - heading "Frontend" [level=3] [ref=e447]
+          - paragraph [ref=e448]: React JS · Next.js · TypeScript · HTML5 · CSS3 · Tailwind CSS · shadcn/ui · Flowbite · Framer Motion · Responsive Web Design
+        - generic [ref=e450]:
+          - heading "Design" [level=3] [ref=e451]
+          - paragraph [ref=e452]: Figma · Wireframing · UI Prototyping · High-Fidelity Mockups · Design-to-Code Conversion · Photoshop · Illustrator · Affinity Designer · Canva
+        - generic [ref=e454]:
+          - heading "AI-Assisted Development" [level=3] [ref=e455]
+          - paragraph [ref=e456]: Claude Code · Cursor IDE · Antigravity IDE · Trae IDE · LLM Plugins · Rapid Prototyping · AI-powered product interfaces
+        - generic [ref=e458]:
+          - heading "Additional" [level=3] [ref=e459]
+          - paragraph [ref=e460]: On-Page SEO · Cross-Browser Compatibility · Interaction Design · Information Architecture · User Flows
+    - generic [ref=e463]:
+      - generic [ref=e464]:
+        - generic [ref=e465]:
+          - paragraph [ref=e466]: 10 / About
+          - heading "I started with websites. I ended up building products." [level=2] [ref=e467]
+        - generic [ref=e468]:
+          - paragraph [ref=e469]: I have spent more than 18 years designing for the web. What started with website design and frontend implementation evolved into UI/UX design, responsive product interfaces, and complex enterprise applications.
+          - paragraph [ref=e470]: Over the years, I have worked across visual design, wireframing, prototyping, frontend development, design systems, and production interfaces.
+          - paragraph [ref=e471]: Today, I bring those disciplines together - designing products with a strong understanding of how they should work, how they should look, and how they should be built.
+          - paragraph [ref=e472]: I don't design in isolation from implementation. If I hand you a screen, I can also hand you the component that renders it.
+          - paragraph [ref=e473]: My current focus is the intersection of product UI/UX, frontend development, and AI-assisted workflows.
+      - img "Dip Kumar Kapat — Senior UI/UX Designer & Frontend Product Builder" [ref=e477]
+    - generic [ref=e479]:
+      - generic [ref=e480]:
+        - paragraph [ref=e481]: 11 / Why Work With Me
+        - heading "One person. Two disciplines. Less friction." [level=2] [ref=e482]
+        - paragraph [ref=e483]: When design and frontend development are understood together, fewer things get lost between the design file and the final product.
+      - generic [ref=e484]:
+        - generic [ref=e486]:
+          - paragraph [ref=e487]: Design expertise
+          - generic [ref=e488]:
+            - paragraph [ref=e489]: 18+
+            - paragraph
+          - paragraph [ref=e490]: Years of web and UI design experience.
+        - generic [ref=e492]:
+          - paragraph [ref=e493]: Product execution
+          - generic [ref=e494]:
+            - paragraph [ref=e495]: 5+
+            - paragraph
+          - paragraph [ref=e496]: Years of React-focused development and 25+ enterprise product modules.
+        - generic [ref=e498]:
+          - paragraph [ref=e499]: Modern workflow
+          - generic [ref=e500]:
+            - paragraph [ref=e501]: AI
+            - paragraph
+          - paragraph [ref=e502]: AI-assisted tools combined with established design and development practices.
+    - generic [ref=e505]:
+      - generic [ref=e507]:
+        - generic [ref=e508]:
+          - paragraph [ref=e509]: 12 / Contact
+          - heading "Have a complex product that needs better UX and better execution?" [level=2] [ref=e510]
+          - paragraph [ref=e511]: Whether you need a new product interface, a better UX for an existing system, or a polished frontend implementation, I bring design thinking and frontend execution into the same workflow.
+        - generic [ref=e512]:
+          - generic [ref=e513]:
+            - paragraph [ref=e514]: Email
+            - link "dipkrkapat@protonmail.com" [ref=e515] [cursor=pointer]:
+              - /url: mailto:dipkrkapat@protonmail.com
+          - generic [ref=e516]:
+            - paragraph [ref=e517]: Location
+            - paragraph [ref=e518]: Kolkata, West Bengal, India
+          - generic [ref=e519]:
+            - paragraph [ref=e520]: Availability
+            - paragraph [ref=e521]: Currently building at Adhyan Digital
+      - generic [ref=e525]:
+        - generic [ref=e526]:
+          - text: Website
+          - textbox [ref=e527]
+        - generic [ref=e528]:
+          - generic [ref=e529]:
+            - generic [ref=e530]: Name *
+            - textbox "Name *" [ref=e531]:
+              - /placeholder: Your name
+          - generic [ref=e532]:
+            - generic [ref=e533]: Email *
+            - textbox "Email *" [ref=e534]:
+              - /placeholder: you@company.com
+        - generic [ref=e535]:
+          - generic [ref=e536]:
+            - generic [ref=e537]: Company (optional)
+            - textbox "Company (optional)" [ref=e538]:
+              - /placeholder: Company or organization
+          - generic [ref=e539]:
+            - generic [ref=e540]: Inquiry type
+            - combobox "Inquiry type" [ref=e541]:
+              - option "Full-time role" [selected]
+              - option "Freelance - UI/UX design"
+              - option "Freelance - Frontend development"
+              - option "Freelance - Design-to-code"
+              - option "Project collaboration"
+              - option "Other"
+        - generic [ref=e542]:
+          - generic [ref=e543]: Message *
+          - textbox "Message *" [ref=e544]:
+            - /placeholder: Tell me about your project, timeline, and goals.
+        - generic [ref=e545]:
+          - button "Send Message" [ref=e546]
+          - paragraph [ref=e550]:
+            - text: Prefer email?
+            - link "dipkrkapat@protonmail.com" [ref=e551] [cursor=pointer]:
+              - /url: mailto:dipkrkapat@protonmail.com
+    - generic [ref=e555]:
+      - paragraph [ref=e556]: Have a product to build?
+      - heading "Let's turn the complexity into something people understand." [level=2] [ref=e557]
+      - paragraph [ref=e558]: Let's design it, structure it, and ship it.
+      - generic [ref=e559]:
+        - link "Start a Conversation" [ref=e560] [cursor=pointer]:
+          - /url: "#contact"
+        - link "Download Resume" [ref=e563] [cursor=pointer]:
+          - /url: /resume/Dip-Kumar-Kapat-Resume.pdf
+  - contentinfo [ref=e564]:
+    - generic [ref=e565]:
+      - generic [ref=e566]:
+        - generic [ref=e567]:
+          - paragraph [ref=e568]: Dip Kumar Kapat
+          - paragraph [ref=e569]: Senior UI/UX Designer · Frontend Product Builder
+          - paragraph [ref=e570]: Designing products. Building interfaces. Exploring what's next.
+        - navigation "Footer navigation" [ref=e571]:
+          - paragraph [ref=e572]: Navigate
+          - list [ref=e573]:
+            - listitem [ref=e574]:
+              - link "Work" [ref=e575] [cursor=pointer]:
+                - /url: "#work"
+            - listitem [ref=e576]:
+              - link "Capabilities" [ref=e577] [cursor=pointer]:
+                - /url: "#capabilities"
+            - listitem [ref=e578]:
+              - link "About" [ref=e579] [cursor=pointer]:
+                - /url: "#about"
+            - listitem [ref=e580]:
+              - link "Experience" [ref=e581] [cursor=pointer]:
+                - /url: "#experience"
+        - generic [ref=e582]:
+          - paragraph [ref=e583]: Connect
+          - list [ref=e584]:
+            - listitem [ref=e585]:
+              - link "dipkrkapat@protonmail.com" [ref=e586] [cursor=pointer]:
+                - /url: mailto:dipkrkapat@protonmail.com
+            - listitem [ref=e590]:
+              - link "Email Dip Kumar Kapat" [ref=e591] [cursor=pointer]:
+                - /url: mailto:dipkrkapat@protonmail.com
+                - text: Email
+            - listitem [ref=e595]:
+              - link "Dip Kumar Kapat on LinkedIn" [ref=e596] [cursor=pointer]:
+                - /url: https://www.linkedin.com/in/dipkrkapat
+                - text: LinkedIn
+            - listitem [ref=e600]:
+              - link "Dip Kumar Kapat on GitHub" [ref=e601] [cursor=pointer]:
+                - /url: https://github.com/dipkrkapat
+                - text: GitHub
+      - separator [ref=e605]
+      - generic [ref=e606]:
+        - paragraph [ref=e607]: © 2026 Dip Kumar Kapat
+        - paragraph [ref=e608]: Kolkata, West Bengal, India
+  - button "Open Next.js Dev Tools" [ref=e614] [cursor=pointer]

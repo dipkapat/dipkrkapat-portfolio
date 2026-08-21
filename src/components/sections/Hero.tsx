@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight, User } from "lucide-react";
 import { siteConfig } from "@/data/site";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -130,6 +130,7 @@ export function Hero() {
 								/>
 							</div>
 						</Reveal>
+						
 					</div>
 				</div>
 			</Container>
