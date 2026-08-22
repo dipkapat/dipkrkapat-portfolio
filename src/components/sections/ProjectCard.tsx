@@ -81,6 +81,7 @@ export function ProjectCard({ project, reversed }: ProjectCardProps) {
               className="w-full h-auto object-top transition-transform duration-700 ease-out group-hover:scale-[1.02]"
               sizes="(min-width: 1024px) 60vw, 100vw"
             />
+
           </div>
         </a>
       </div>

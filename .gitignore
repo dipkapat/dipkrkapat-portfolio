@@ -24,8 +24,9 @@
 .DS_Store
 *.pem
 
-# playwright-cli session logs
+# playwright session logs
 .playwright-cli/
+.playwright-mcp/
 
 # debug
 npm-debug.log*
