@@ -6,6 +6,7 @@ import { projects } from "@/data/projects";
 import { ProjectCardCarousel } from "@/components/sections/ProjectCardCarousel";
 import { Container } from "@/components/ui/Container";
 import { DualCTA } from "@/components/ui/DualCTA";
+import { Stagger, StaggerItem } from "@/components/motion/Stagger";
 
 export function SelectedWork() {
   const [showScrollHint, setShowScrollHint] = useState(false);
@@ -39,11 +40,15 @@ export function SelectedWork() {
 
           {/* Carousel Track */}
           <div className="carousel-track" role="region" aria-label="Project showcase">
-            <div className="carousel-inner">
-              {projects.map((project) => (
-                <ProjectCardCarousel key={project.slug} project={project} />
-              ))}
-            </div>
+            <Stagger stagger={0.08} delay={0.2} direction="up">
+              <div className="carousel-inner">
+                {projects.map((project) => (
+                  <StaggerItem key={project.slug} direction="up">
+                    <ProjectCardCarousel project={project} />
+                  </StaggerItem>
+                ))}
+              </div>
+            </Stagger>
           </div>
 
           {/* Mobile Scroll Hint */}

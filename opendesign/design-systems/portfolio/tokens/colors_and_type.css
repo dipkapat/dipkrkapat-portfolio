@@ -31,6 +31,8 @@
   --accent-ai-soft: #f0ebff;   /* Violet soft */
   --accent-fin: #10b981;       /* Emerald */
   --accent-fin-soft: #ecfdf5;  /* Emerald soft */
+  --accent-brand: #b87333;     /* Copper (shared with primary accent) */
+  --accent-brand-soft: #fdf3eb; /* Copper soft */
 
   /* Semantic */
   --success-0: #16803c;
@@ -69,6 +71,8 @@
       --accent-ai-soft: #1e1833;
       --accent-fin: #34d399;
       --accent-fin-soft: #06281e;
+      --accent-brand: #d4a574;
+      --accent-brand-soft: #2d1f12;
 
       --ring-0: #d4a574;
     }
@@ -96,11 +100,13 @@
     --accent-ai-soft: #f0ebff;
     --accent-fin: #10b981;
     --accent-fin-soft: #ecfdf5;
+    --accent-brand: #b87333;
+    --accent-brand-soft: #fdf3eb;
 
     --ring-0: #b87333;
   }
 
-  .dark {
+  :root.dark {
     --bg-0: #0a0a0a;
     --bg-1: #121212;
     --bg-2: #1a1a1a;
@@ -122,6 +128,8 @@
     --accent-ai-soft: #1e1833;
     --accent-fin: #34d399;
     --accent-fin-soft: #06281e;
+    --accent-brand: #d4a574;
+    --accent-brand-soft: #2d1f12;
 
     --ring-0: #d4a574;
   }
@@ -239,6 +247,16 @@
       --shadow-glow: 0 0 40px rgba(212, 165, 116, 0.15);
       --shadow-glow-lg: 0 0 80px rgba(212, 165, 116, 0.2);
     }
+  }
+
+  :root.dark {
+    --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+    --shadow-glow: 0 0 40px rgba(212, 165, 116, 0.15);
+    --shadow-glow-lg: 0 0 80px rgba(212, 165, 116, 0.2);
   }
 
   /* ===== TRANSITIONS ===== */

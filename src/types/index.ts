@@ -2,8 +2,8 @@ export type ProjectCategory =
   | "SaaS"
   | "AI"
   | "FinTech"
-  | "Web Application"
-  | "Website";
+  | "Brand"
+  | "Enterprise";
 
 export type ProjectFilter = "All" | "UI/UX" | "Frontend" | "Web Applications" | "Websites";
 

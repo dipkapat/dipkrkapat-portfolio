@@ -5,5 +5,5 @@ interface DividerProps {
 }
 
 export function Divider({ className }: DividerProps) {
-  return <hr className={cn("h-px w-full border-0 bg-border", className)} />;
+  return <hr className={cn("h-px w-full border-0 bg-bg-3", className)} />;
 }

@@ -21,14 +21,14 @@ interface ButtonProps {
 }
 
 const baseStyles =
-  "inline-flex items-center justify-center gap-2 rounded-sm font-medium transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent disabled:pointer-events-none disabled:opacity-50";
+  "inline-flex items-center justify-center gap-2 rounded-sm font-medium transition-all duration-200 ease-out focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ring-0 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98]";
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    "bg-text-primary px-6 py-3 text-sm text-background hover:bg-accent",
+    "bg-fg-0 px-6 py-3 text-sm text-bg-0 hover:bg-accent-0 hover:shadow-glow",
   secondary:
-    "border border-border px-6 py-3 text-sm text-text-primary hover:border-accent hover:text-accent",
-  text: "px-1 py-1 text-sm text-text-primary underline-offset-4 hover:text-accent hover:underline",
+    "border border-bg-3 px-6 py-3 text-sm text-fg-0 hover:border-accent-0 hover:text-accent-0 hover:bg-accent-3",
+  text: "px-1 py-1 text-sm text-fg-1 underline-offset-4 hover:text-accent-0 hover:underline",
 };
 
 export function Button({

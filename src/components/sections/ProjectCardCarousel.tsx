@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, useReducedMotion } from "framer-motion";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 import type { Project } from "@/types";
 import { cn } from "@/lib/utils";
 import { trackEvent } from "@/lib/analytics";
@@ -16,16 +17,28 @@ interface ProjectCardCarouselProps {
 export function ProjectCardCarousel({ project }: ProjectCardCarouselProps) {
   const reduceMotion = useReducedMotion();
   const [hovered, setHovered] = useState(false);
+  const router = useRouter();
 
   return (
     <motion.article
-      className="group relative flex-shrink-0 snap-start carousel-card"
-      initial={reduceMotion ? false : { opacity: 0, y: 24 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, amount: 0.3 }}
-      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+      className={cn(
+        "group relative flex-shrink-0 snap-start carousel-card",
+        "focus-within:ring-2 focus-within:ring-ring-0 focus-within:ring-offset-2 focus-within:ring-offset-bg-0 dark:focus-within:ring-offset-bg-0"
+      )}
+      initial={false}
+      whileHover={reduceMotion ? undefined : { y: -4 }}
+      whileTap={reduceMotion ? undefined : { scale: 0.98 }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      tabIndex={0}
+      role="button"
+      onKeyDown={(e) => {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          router.push(`/work/${project.slug}`);
+        }
+      }}
+      style={{ outline: "none" }}
     >
       {/* Outer Shell */}
       <div

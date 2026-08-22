@@ -7,6 +7,7 @@ export const projects: Project[] = [
 		name: "Saint's Paradise Cafeteria",
 		label: "Hospitality · Brand Experience",
 		category: "Brand",
+		featured: false,
 		filters: ["UI/UX", "Frontend", "Websites"],
 		title: "A digital experience designed to create desire before the first visit.",
 		description:
@@ -66,6 +67,7 @@ export const projects: Project[] = [
 		name: "LoanLens",
 		label: "FinTech · Interactive Data Experience",
 		category: "FinTech",
+		featured: false,
 		filters: ["UI/UX", "Frontend", "Web Applications"],
 		title: "Turning financial complexity into an understandable experience.",
 		description:
@@ -125,6 +127,7 @@ export const projects: Project[] = [
 		name: "VetBook",
 		label: "SaaS · Workflow Management",
 		category: "SaaS",
+		featured: false,
 		filters: ["UI/UX", "Frontend"],
 		title: "Designing operational software around real-world workflows.",
 		description:
@@ -184,6 +187,7 @@ export const projects: Project[] = [
 		name: "PulseMetrics",
 		label: "B2B SaaS · Analytics Dashboard",
 		category: "SaaS",
+		featured: true,
 		filters: ["UI/UX", "Frontend"],
 		title: "Making complex business data easier to understand.",
 		description:
@@ -250,6 +254,7 @@ export const projects: Project[] = [
 		name: "AI Content Studio",
 		label: "AI Product · Conversational Interface",
 		category: "AI",
+		featured: false,
 		filters: ["UI/UX", "Frontend"],
 		title: "Designing a clearer interface for human–AI collaboration.",
 		description:
@@ -304,6 +309,32 @@ export const projects: Project[] = [
 			"Next iteration: richer artifact editing flows and deeper personalization of model presets, plus accessibility testing of the live-updating regions with screen readers.",
 	},
 ];
+
+export const enterpriseProject = {
+	slug: "enterprise-erp",
+	name: "School Automation ERP",
+	label: "Enterprise · Product Ecosystem",
+	category: "Enterprise",
+	title: "25+ Modules. One Product Ecosystem.",
+	description:
+		"For a School Automation ERP platform, I designed and built 25+ interconnected modules — academics, attendance, fees, payroll, transport, library, hostel, admissions, and more — as a single coherent product on a continuous delivery cycle.",
+	role: ["Product Design", "UI/UX Design", "Frontend Architecture", "Design Systems"],
+	stack: [
+		"React",
+		"Next.js",
+		"Tailwind CSS",
+		"shadcn/ui",
+		"Flowbite",
+		"Framer Motion",
+	],
+	liveUrl: "#",
+	image: {
+		src: "/work/Enterprise-ERP-Dashboard.png",
+		alt: "School Automation ERP dashboard showing multiple interconnected modules",
+		width: 1280,
+		height: 800,
+	},
+};
 
 export function getProject(slug: string): Project | undefined {
 	return projects.find((project) => project.slug === slug);

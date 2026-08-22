@@ -3,6 +3,44 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+/* Dark mode token overrides — explicit :root.dark wins over media query in imported tokens */
+:root.dark {
+  --bg-0: #0a0a0a;
+  --bg-1: #121212;
+  --bg-2: #1a1a1a;
+  --bg-3: #2a2a2a;
+  --bg-4: #3a3a3a;
+
+  --fg-0: #fafaf8;
+  --fg-1: #c8c7c0;
+  --fg-2: #9d9c94;
+  --fg-3: #6d6c66;
+  --fg-4: #e8e7e0;
+
+  --accent-0: #d4a574;
+  --accent-1: #e8c08a;
+  --accent-2: #b87333;
+  --accent-3: #2d1f12;
+  --accent-4: #f5d8b8;
+
+  --accent-ai: #a78bff;
+  --accent-ai-soft: #1e1833;
+  --accent-fin: #34d399;
+  --accent-fin-soft: #06281e;
+  --accent-brand: #d4a574;
+  --accent-brand-soft: #2d1f12;
+
+  --ring-0: #d4a574;
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 40px rgba(212, 165, 116, 0.15);
+  --shadow-glow-lg: 0 0 80px rgba(212, 165, 116, 0.2);
+}
+
 @theme inline {
   /* OLD TOKENS (backward compatibility) */
   --color-background: var(--background);
