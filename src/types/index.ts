@@ -17,7 +17,7 @@ export interface Project {
   index: string;
   name: string;
   label: string;
-  category: ProjectCategory;
+  category: "SaaS" | "AI" | "FinTech" | "Brand" | "Enterprise";
   filters: Exclude<ProjectFilter, "All">[];
   title: string;
   description: string;
@@ -41,6 +41,7 @@ export interface Project {
   frontend: string[];
   result: string;
   reflection: string;
+  featured?: boolean;
 }
 
 export interface ExperiencePhase {

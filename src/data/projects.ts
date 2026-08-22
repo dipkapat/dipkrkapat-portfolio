@@ -6,7 +6,7 @@ export const projects: Project[] = [
 		index: "01",
 		name: "Saint's Paradise Cafeteria",
 		label: "Hospitality · Brand Experience",
-		category: "Website",
+		category: "Brand",
 		filters: ["UI/UX", "Frontend", "Websites"],
 		title: "A digital experience designed to create desire before the first visit.",
 		description:
