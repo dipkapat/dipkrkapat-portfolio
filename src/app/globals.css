@@ -1,72 +1,71 @@
 @import "tailwindcss";
 
-@import "../../opendesign/design-systems/portfolio/tokens/colors_and_type.css";
-
 @custom-variant dark (&:where(.dark, .dark *));
 
+:root {
+  --background: #fafaf8;
+  --surface: #ffffff;
+  --surface-muted: #f0efeb;
+  --text-primary: #0d0d0d;
+  --text-secondary: #4a4a45;
+  --text-tertiary: #73736d;
+  --border: #e0dfd9;
+  --border-strong: #d0cfc7;
+  --accent: #b87333;
+  --accent-soft: #fdf3eb;
+  --accent-strong: #9d5d28;
+  --success: #16803c;
+  --warning: #b7791f;
+  --error: #c53030;
+  --ring: #b87333;
+}
+
+.dark {
+  --background: #0a0a0a;
+  --surface: #121212;
+  --surface-muted: #1a1a1a;
+  --text-primary: #fafaf8;
+  --text-secondary: #b8b8b0;
+  --text-tertiary: #8c8c86;
+  --border: #2a2a2a;
+  --border-strong: #3d3d38;
+  --accent: #d4a574;
+  --accent-soft: #2d1f12;
+  --accent-strong: #e8c08a;
+  --success: #3fae68;
+  --warning: #d59a3d;
+  --error: #e56a6a;
+  --ring: #d4a574;
+}
+
 @theme inline {
-  --color-bg-0: var(--bg-0);
-  --color-bg-1: var(--bg-1);
-  --color-bg-2: var(--bg-2);
-  --color-bg-3: var(--bg-3);
-  --color-bg-4: var(--bg-4);
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-text-primary: var(--text-primary);
+  --color-text-secondary: var(--text-secondary);
+  --color-text-tertiary: var(--text-tertiary);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-strong: var(--accent-strong);
+  --color-success: var(--success);
+  --color-warning: var(--warning);
+  --color-error: var(--error);
 
-  --color-fg-0: var(--fg-0);
-  --color-fg-1: var(--fg-1);
-  --color-fg-2: var(--fg-2);
-  --color-fg-3: var(--fg-3);
-  --color-fg-4: var(--fg-4);
+  --font-sans: var(--font-instrument-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-instrument-serif), ui-serif, Georgia, serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, "SF Mono", monospace;
 
-  --color-accent-0: var(--accent-0);
-  --color-accent-1: var(--accent-1);
-  --color-accent-2: var(--accent-2);
-  --color-accent-3: var(--accent-3);
-  --color-accent-4: var(--accent-4);
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
 
-  --color-success-0: var(--success-0);
-  --color-success-1: var(--success-1);
-  --color-warning-0: var(--warning-0);
-  --color-warning-1: var(--warning-1);
-  --color-error-0: var(--error-0);
-  --color-error-1: var(--error-1);
-
-  --color-ring-0: var(--ring-0);
-
-  --font-display: var(--font-display);
-  --font-ui: var(--font-ui);
-  --font-mono: var(--font-mono);
-
-  --radius-sm: var(--radius-sm);
-  --radius-md: var(--radius-md);
-  --radius-lg: var(--radius-lg);
-  --radius-xl: var(--radius-xl);
-  --radius-2xl: var(--radius-2xl);
-  --radius-3xl: var(--radius-3xl);
-  --radius-full: var(--radius-full);
-
-  --shadow-xs: var(--shadow-xs);
-  --shadow-sm: var(--shadow-sm);
-  --shadow-md: var(--shadow-md);
-  --shadow-lg: var(--shadow-lg);
-  --shadow-xl: var(--shadow-xl);
-  --shadow-glow: var(--shadow-glow);
-  --shadow-glow-lg: var(--shadow-glow-lg);
-
-  --ease-out: var(--ease-out);
-  --ease-out-expo: var(--ease-out-expo);
-  --ease-in-out: var(--ease-in-out);
-  --ease-spring: var(--ease-spring);
-  --duration-fast: var(--duration-fast);
-  --duration-base: var(--duration-base);
-  --duration-smooth: var(--duration-smooth);
-  --duration-slow: var(--duration-slow);
-  --duration-slower: var(--duration-slower);
-  --duration-slowest: var(--duration-slowest);
-
-  --container-max: var(--container-max);
-  --container-padding: var(--container-padding);
-  --container-padding-lg: var(--container-padding-lg);
-  --container-padding-xl: var(--container-padding-xl);
+  --tracking-display: -0.045em;
+  --tracking-heading: -0.035em;
+  --tracking-body: -0.01em;
+  --tracking-label: 0.08em;
 }
 
 @layer base {
@@ -76,70 +75,37 @@
   }
 
   body {
-    background-color: var(--bg-0);
-    color: var(--fg-0);
-    font: var(--style-body);
+    background-color: var(--background);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    letter-spacing: var(--tracking-body);
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
   }
 
   ::selection {
-    background-color: var(--accent-0);
+    background-color: var(--accent);
     color: #ffffff;
   }
 
   :focus-visible {
-    outline: 2px solid var(--ring-0);
+    outline: 2px solid var(--ring);
     outline-offset: 2px;
     border-radius: 2px;
   }
 }
 
 @layer utilities {
-  .font-display { font-family: var(--font-display); }
-  .font-ui { font-family: var(--font-ui); }
-  .font-mono { font-family: var(--font-mono); }
-
-  .text-display { font: var(--style-display); }
-  .text-display-lg { font: var(--style-display-lg); }
-  .text-display-sm { font: var(--style-display-sm); }
-  .text-h1 { font: var(--style-h1); }
-  .text-h2 { font: var(--style-h2); }
-  .text-h3 { font: var(--style-h3); }
-  .text-h4 { font: var(--style-h4); }
-  .text-body-lg { font: var(--style-body-lg); }
-  .text-body { font: var(--style-body); }
-  .text-body-sm { font: var(--style-body-sm); }
-  .text-label { font: var(--style-label); }
-  .text-label-sm { font: var(--style-label-sm); }
-  .text-label-xs { font: var(--style-label-xs); }
-  .text-code { font: var(--style-code); }
-  .text-code-sm { font: var(--style-code-sm); }
-
-  /* Gradient text utility */
-  .text-gradient {
-    background: linear-gradient(135deg, var(--fg-0) 0%, var(--accent-0) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  .font-display {
+    letter-spacing: var(--tracking-display);
   }
 
-  /* Grain texture overlay */
-  .grain-overlay {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: var(--z-base);
-    opacity: 0.025;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C/svg%3E");
-    mix-blend-mode: multiply;
+  .heading-tight {
+    letter-spacing: var(--tracking-heading);
   }
 
-  @media (prefers-color-scheme: dark) {
-    :root:not(.light) .grain-overlay {
-      opacity: 0.04;
-      mix-blend-mode: screen;
-    }
+  .label-tracking {
+    letter-spacing: var(--tracking-label);
   }
 
   /* Carousel / Scroll-Snap Utilities */
