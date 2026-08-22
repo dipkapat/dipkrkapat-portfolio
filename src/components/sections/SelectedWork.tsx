@@ -1,94 +1,97 @@
 "use client";
 
-import { motion, useReducedMotion } from "framer-motion";
+import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { projects } from "@/data/projects";
-import { ProjectCard } from "@/components/sections/ProjectCard";
+import { ProjectCardCarousel } from "@/components/sections/ProjectCardCarousel";
 import { Container } from "@/components/ui/Container";
-import { SectionHeading } from "@/components/ui/SectionHeading";
-import type { ProjectFilter } from "@/types";
-import { cn } from "@/lib/utils";
-import { useMemo, useState } from "react";
-
-const filters: ProjectFilter[] = [
-	"All",
-	"UI/UX",
-	"Frontend",
-	"Web Applications",
-	"Websites",
-];
+import { DualCTA } from "@/components/ui/DualCTA";
 
 export function SelectedWork() {
-	const [active, setActive] = useState<ProjectFilter>("All");
-	const reduceMotion = useReducedMotion();
+  const [showScrollHint, setShowScrollHint] = useState(false);
 
-	const filtered = useMemo(
-		() =>
-			active === "All"
-				? projects
-				: projects.filter((project) =>
-						project.filters.includes(active),
-					),
-		[active],
-	);
+  useEffect(() => {
+    const hintSeen = localStorage.getItem("carousel-hint-seen");
+    if (!hintSeen) {
+      const timer = setTimeout(() => setShowScrollHint(true), 800);
+      return () => clearTimeout(timer);
+    }
+  }, []);
 
-	return (
-		<section id="work" className="py-20 lg:py-28">
-			<Container>
-				<div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
-					<SectionHeading
-						eyebrow="03 / Selected Work"
-						title="A selection of products, interfaces, and digital experiences."
-						description="Each project explores a different product challenge - from SaaS analytics and AI interfaces to operational systems, financial tools, and conversion-focused websites."
-					/>
-					<div
-						role="group"
-						aria-label="Filter projects"
-						className="flex flex-wrap gap-2"
-					>
-						{filters.map((filter) => (
-							<button
-								key={filter}
-								type="button"
-								onClick={() => setActive(filter)}
-								aria-pressed={active === filter}
-								className={cn(
-									"rounded-sm border px-3.5 py-2 font-mono text-xs uppercase tracking-[0.08em] transition-colors",
-									active === filter
-										? "border-text-primary bg-text-primary text-background"
-										: "border-border bg-surface text-text-secondary hover:border-accent hover:text-accent",
-								)}
-							>
-								{filter}
-							</button>
-						))}
-					</div>
-				</div>
+  const dismissHint = () => {
+    localStorage.setItem("carousel-hint-seen", "true");
+    setShowScrollHint(false);
+  };
 
-				<motion.div
-					layout={!reduceMotion}
-					className="mt-14 flex flex-col gap-20 lg:gap-28"
-				>
-					{filtered.map((project, index) => (
-						<motion.div
-							key={project.slug}
-							layout={!reduceMotion}
-							initial={
-								reduceMotion ? false : { opacity: 0, y: 24 }
-							}
-							animate={{ opacity: 1, y: 0 }}
-							transition={{
-								duration: 0.45,
-								ease: [0.22, 1, 0.36, 1],
-							}}
-						>
-							<ProjectCard
-								project={project}
-								reversed={index % 2 === 1}
-							/>
-						</motion.div>
-					))}
-				</motion.div>
-			</Container>
-		</section>
-	);
+  return (
+    <>
+      <section id="work" className="py-24 lg:py-32" aria-labelledby="work-heading">
+        <Container>
+          {/* Section Header — no eyebrow per design-taste rule */}
+          <header className="mb-12 lg:mb-16">
+            <h2 id="work-heading" className="font-ui font-semibold text-5xl lg:text-6xl xl:text-7xl tracking-tight text-fg-0">
+              Selected Work
+            </h2>
+            <p className="mt-4 text-lg lg:text-xl text-fg-1 max-w-[60ch]">
+              Five projects spanning brand, fintech, SaaS, and AI — each designed around real problems and shipped to production.
+            </p>
+          </header>
+
+          {/* Carousel Track */}
+          <div className="carousel-track" role="region" aria-label="Project showcase">
+            <div className="carousel-inner">
+              {projects.map((project) => (
+                <ProjectCardCarousel key={project.slug} project={project} />
+              ))}
+            </div>
+          </div>
+
+          {/* Mobile Scroll Hint */}
+          {showScrollHint && (
+            <motion.div
+              className="scroll-hint lg:hidden"
+              initial={{ opacity: 0, y: 10 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+              onClick={dismissHint}
+              role="button"
+              tabIndex={0}
+              onKeyDown={(e) => e.key === "Enter" && dismissHint()}
+              aria-label="Dismiss scroll hint"
+            >
+              <span className="font-mono text-xs uppercase tracking-wider text-fg-2">Scroll</span>
+              <motion.svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={1.5}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                whileHover={{ x: [0, 4, 0] }}
+                transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </motion.svg>
+            </motion.div>
+          )}
+
+          {/* CTA */}
+          <motion.div
+            className="mt-16 text-center"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <DualCTA
+              primary={{ label: "View All Case Studies", href: "#contact" }}
+              secondary={{ label: "View Demo Projects", href: "#work", variant: "text" }}
+            />
+          </motion.div>
+        </Container>
+      </section>
+    </>
+  );
 }
