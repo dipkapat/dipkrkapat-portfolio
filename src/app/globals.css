@@ -177,6 +177,19 @@
     letter-spacing: var(--tracking-label);
   }
 
+  /* Soft Structuralism Shadow Tokens */
+  :root {
+    --shadow-card-outer: 0 4px 24px rgba(13, 13, 13, 0.04), 0 1px 3px rgba(13, 13, 13, 0.03);
+    --shadow-card-inner: 0 2px 8px rgba(13, 13, 13, 0.02);
+    --shadow-card-hover: 0 12px 48px rgba(13, 13, 13, 0.06), 0 4px 16px rgba(13, 13, 13, 0.04);
+  }
+
+  :root.dark {
+    --shadow-card-outer: 0 4px 24px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
+    --shadow-card-inner: 0 2px 8px rgba(0, 0, 0, 0.1);
+    --shadow-card-hover: 0 12px 48px rgba(0, 0, 0, 0.25), 0 4px 16px rgba(0, 0, 0, 0.2);
+  }
+
   /* Carousel / Scroll-Snap Utilities */
   .carousel-track {
     overflow-x: auto;
@@ -184,8 +197,6 @@
     scroll-padding: 0 var(--container-padding);
     -webkit-overflow-scrolling: touch;
     scrollbar-width: none;
-    margin: 0 calc(var(--container-padding) * -1);
-    padding: 0 var(--container-padding);
     padding-bottom: var(--space-4);
   }
   .carousel-track::-webkit-scrollbar {
@@ -194,20 +205,21 @@
 
   .carousel-inner {
     display: flex;
+    flex-wrap: nowrap;
     gap: var(--space-6);
     will-change: scroll-position;
   }
 
   .carousel-card {
     flex: 0 0 340px;
-    max-width: 100%;
+    width: 340px;
     scroll-snap-align: start;
     scroll-snap-stop: always;
   }
 
   @media (max-width: 639px) {
     .carousel-card {
-      flex-basis: calc(100vw - 2rem);
+      width: calc(100vw - 2rem);
     }
     .carousel-track {
       gap: var(--space-4);
@@ -217,7 +229,7 @@
 
   @media (min-width: 640px) and (max-width: 1023px) {
     .carousel-card {
-      flex-basis: 320px;
+      width: 320px;
     }
     .carousel-track {
       gap: var(--space-6);
@@ -226,7 +238,7 @@
 
   @media (min-width: 1024px) {
     .carousel-card {
-      flex-basis: 340px;
+      width: 340px;
     }
     .carousel-track {
       gap: var(--space-8);

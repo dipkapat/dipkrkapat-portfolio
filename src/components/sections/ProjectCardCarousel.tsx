@@ -16,20 +16,23 @@ interface ProjectCardCarouselProps {
 
 export function ProjectCardCarousel({ project }: ProjectCardCarouselProps) {
   const reduceMotion = useReducedMotion();
-  const [hovered, setHovered] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
   const router = useRouter();
 
   return (
     <motion.article
       className={cn(
-        "group relative flex-shrink-0 snap-start carousel-card",
-        "focus-within:ring-2 focus-within:ring-ring-0 focus-within:ring-offset-2 focus-within:ring-offset-bg-0 dark:focus-within:ring-offset-bg-0"
+        "group relative flex-shrink-0 snap-start carousel-card h-full",
+        "focus-visible:ring-2 focus-visible:ring-accent-0 focus-visible:ring-offset-2 focus-visible:ring-offset-bg-0 dark:focus-visible:ring-offset-bg-0"
       )}
-      initial={false}
+      initial={reduceMotion ? false : { opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.3 }}
+      transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
       whileHover={reduceMotion ? undefined : { y: -4 }}
       whileTap={reduceMotion ? undefined : { scale: 0.98 }}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
       tabIndex={0}
       role="button"
       onKeyDown={(e) => {
@@ -38,73 +41,83 @@ export function ProjectCardCarousel({ project }: ProjectCardCarouselProps) {
           router.push(`/work/${project.slug}`);
         }
       }}
-      style={{ outline: "none" }}
+      style={{ outline: "none", minHeight: "762px" }}
     >
-      {/* Outer Shell */}
+      {/* Double-bezel architecture - Outer shell */}
       <div
         className={cn(
-          "rounded-2xl border border-bg-3 bg-bg-1 p-1.5 transition-all duration-400 ease-out",
-          "group-hover:border-bg-4 group-hover:shadow-[0_12px_48px_rgba(13,13,13,0.06),0_4px_16px_rgba(13,13,13,0.04)]",
-          "dark:group-hover:shadow-[0_12px_48px_rgba(0,0,0,0.25),0_4px_16px_rgba(0,0,0,0.2)]"
+          "rounded-2xl border border-bg-3 bg-bg-2 p-1.5 transition-all duration-300 ease-out h-full",
+          "group-hover:border-accent-0 group-hover:shadow-glow",
+          reduceMotion && "transition-none"
         )}
+        style={{ minHeight: "762px" }}
       >
         {/* Inner Core */}
-        <div className="rounded-[20px] bg-bg-0 overflow-hidden">
-          {/* Image — fixed 4:3 aspect ratio */}
+        <div className="rounded-[20px] bg-bg-0 h-full flex flex-col">
+          {/* Image — fixed 4:3 aspect ratio with double-bezel */}
           <a
             href={`/work/${project.slug}`}
-            className="block relative aspect-[4/3] overflow-hidden"
+            className="group relative block overflow-hidden rounded-2xl border border-bg-3 transition-all duration-300 ease-out hover:border-accent-0 hover:shadow-glow mb-6 flex-shrink-0"
             aria-label={`${project.name} case study`}
           >
-            <motion.div
-              className="absolute inset-0"
-              initial={false}
-              animate={{ scale: hovered && !reduceMotion ? 1.02 : 1 }}
-              transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
-            >
-              <Image
-                src={project.image.src}
-                alt={project.image.alt}
-                width={project.image.width}
-                height={project.image.height}
-                className="w-full h-full object-cover"
-                sizes="340px"
-              />
-            </motion.div>
+            {/* Outer shell */}
+            <div className="rounded-2xl border border-bg-3 bg-bg-2 p-1.5 transition-all duration-300 ease-out group-hover:border-accent-0">
+              {/* Inner core - Image container */}
+              <div className="relative overflow-hidden rounded-[20px] bg-surface-muted">
+                <motion.div
+                  className="relative h-[220px] overflow-hidden"
+                  initial={false}
+                  animate={{ scale: isHovered && !reduceMotion ? 1.02 : 1 }}
+                  transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                >
+                  <Image
+                    src={project.image.src}
+                    alt={project.image.alt}
+                    width={project.image.width}
+                    height={project.image.height}
+                    className="w-full h-full object-cover"
+                    sizes="340px"
+                  />
+                </motion.div>
+              </div>
+            </div>
           </a>
 
-          {/* Content */}
-          <div className="p-6 lg:p-8">
-            <p className="font-mono text-xs uppercase tracking-wider text-fg-2">
-              {project.index} / {project.name}
-            </p>
-            <CategoryBadge category={project.category} className="mt-2" />
-            <p className="mt-2 font-mono text-xs uppercase tracking-wider text-accent-0">
-              {project.label}
-            </p>
-            <h3 className="mt-4 font-ui font-semibold text-xl lg:text-2xl leading-snug tracking-tight text-fg-0">
-              {project.title}
-            </h3>
-            <p className="mt-3 text-sm leading-relaxed text-fg-1 line-clamp-3">
-              {project.description}
-            </p>
+          {/* Content - grows to fill remaining space */}
+          <div className="p-6 lg:p-8 flex flex-col flex-1">
+            <div className="flex-1">
+              <p className="font-mono text-xs uppercase tracking-[0.12em] text-fg-2">
+                {project.index} / {project.name}
+              </p>
+              <CategoryBadge category={project.category} className="mt-2 group-hover:scale-[1.05] transition-transform duration-150 ease-spring" />
+              <p className="mt-2 font-mono text-xs uppercase tracking-[0.12em] text-accent-0">
+                {project.label}
+              </p>
+              <h3 className="mt-4 font-display font-normal text-xl leading-snug tracking-tight text-fg-0 lg:text-2xl">
+                {project.title}
+              </h3>
+              <p className="mt-3 text-sm leading-relaxed text-fg-1 line-clamp-3">
+                {project.description}
+              </p>
 
-            <dl className="mt-6 grid gap-3">
-              <div>
-                <dt className="font-mono text-[10px] uppercase tracking-widest text-fg-2">
-                  Role
-                </dt>
-                <dd className="mt-1 text-sm text-fg-0">{project.role.join(" · ")}</dd>
-              </div>
-              <div>
-                <dt className="font-mono text-[10px] uppercase tracking-widest text-fg-2">
-                  Stack
-                </dt>
-                <dd className="mt-1 text-sm text-fg-0">{project.stack.join(" · ")}</dd>
-              </div>
-            </dl>
+              <dl className="mt-6 grid gap-3">
+                <div>
+                  <dt className="font-mono text-[11px] uppercase tracking-[0.12em] text-fg-2">
+                    Role
+                  </dt>
+                  <dd className="mt-1 text-sm text-fg-0">{project.role.join(" · ")}</dd>
+                </div>
+                <div>
+                  <dt className="font-mono text-[11px] uppercase tracking-[0.12em] text-fg-2">
+                    Stack
+                  </dt>
+                  <dd className="mt-1 text-sm text-fg-0">{project.stack.join(" · ")}</dd>
+                </div>
+              </dl>
+            </div>
 
-            <div className="mt-6 flex flex-wrap items-center gap-3">
+            {/* Actions always at bottom */}
+            <div className="mt-6 flex flex-wrap items-center gap-3 pt-4 border-t border-bg-3">
               <motion.a
                 href={`/work/${project.slug}`}
                 className="inline-flex items-center gap-1.5 text-sm font-medium text-fg-0 underline-offset-4 transition-colors hover:text-accent-0"

@@ -7,6 +7,8 @@ import { ProjectCardCarousel } from "@/components/sections/ProjectCardCarousel";
 import { Container } from "@/components/ui/Container";
 import { DualCTA } from "@/components/ui/DualCTA";
 import { Stagger, StaggerItem } from "@/components/motion/Stagger";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+import { Reveal } from "@/components/motion/Reveal";
 
 export function SelectedWork() {
   const [showScrollHint, setShowScrollHint] = useState(false);
@@ -26,30 +28,34 @@ export function SelectedWork() {
 
   return (
     <>
-      <section id="work" className="py-24 lg:py-32" aria-labelledby="work-heading">
+      <section
+        id="work"
+        className="border-t border-bg-3 bg-bg-1/40 py-24 lg:py-32"
+        aria-labelledby="work-heading"
+      >
         <Container>
-          {/* Section Header — no eyebrow per design-taste rule */}
-          <header className="mb-12 lg:mb-16">
-            <h2 id="work-heading" className="font-ui font-semibold text-5xl lg:text-6xl xl:text-7xl tracking-tight text-fg-0">
-              Selected Work
-            </h2>
-            <p className="mt-4 text-lg lg:text-xl text-fg-1 max-w-[60ch]">
-              Five projects spanning brand, fintech, SaaS, and AI — each designed around real problems and shipped to production.
-            </p>
-          </header>
+          {/* Section Header — consistent with other sections */}
+          <SectionHeading
+            id="work-heading"
+            eyebrow="03 / Selected Work"
+            title="Selected Work"
+            description="Five projects spanning brand, fintech, SaaS, and AI — each designed around real problems and shipped to production."
+          />
 
           {/* Carousel Track */}
-          <div className="carousel-track" role="region" aria-label="Project showcase">
-            <Stagger stagger={0.08} delay={0.2} direction="up">
-              <div className="carousel-inner">
-                {projects.map((project) => (
-                  <StaggerItem key={project.slug} direction="up">
-                    <ProjectCardCarousel project={project} />
-                  </StaggerItem>
-                ))}
-              </div>
-            </Stagger>
-          </div>
+          <Reveal delay={0.1} y={30} className="mt-12">
+            <div className="carousel-track" role="region" aria-label="Project showcase">
+              <Stagger stagger={0.08} delay={0.2} direction="up">
+                <div className="carousel-inner">
+                  {projects.map((project) => (
+                    <StaggerItem key={project.slug} direction="up">
+                      <ProjectCardCarousel project={project} />
+                    </StaggerItem>
+                  ))}
+                </div>
+              </Stagger>
+            </div>
+          </Reveal>
 
           {/* Mobile Scroll Hint */}
           {showScrollHint && (
