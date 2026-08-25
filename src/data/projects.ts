@@ -317,8 +317,13 @@ export const enterpriseProject = {
 	category: "Enterprise",
 	title: "25+ Modules. One Product Ecosystem.",
 	description:
-		"For a School Automation ERP platform, I designed and built 25+ interconnected modules — academics, attendance, fees, payroll, transport, library, hostel, admissions, and more — as a single coherent product on a continuous delivery cycle.",
-	role: ["Product Design", "UI/UX Design", "Frontend Architecture", "Design Systems"],
+		"For a School Automation ERP platform, I designed and built 25+ interconnected modules -academics, attendance, fees, payroll, transport, library, hostel, admissions, and more -as a single coherent product on a continuous delivery cycle.",
+	role: [
+		"Product Design",
+		"UI/UX Design",
+		"Frontend Architecture",
+		"Design Systems",
+	],
 	stack: [
 		"React",
 		"Next.js",

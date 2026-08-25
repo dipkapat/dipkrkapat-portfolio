@@ -104,13 +104,13 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
           >
             <div className="rounded-2xl border border-bg-3 bg-bg-2 p-1.5 transition-all duration-300 ease-out group-hover:border-accent-0">
               <div className="relative overflow-hidden rounded-[20px] bg-surface-muted">
-                <div className="relative h-[400px] lg:h-[500px] overflow-hidden">
+                <div className="relative h-[500px] lg:h-[600px] overflow-hidden">
                   <Image
                     src={project.image.src}
                     alt={project.image.alt}
                     width={project.image.width}
                     height={project.image.height}
-                    className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.02]"
+                    className="w-full h-full object-cover object-top transition-transform duration-700 ease-out group-hover:scale-[1.02]"
                     sizes="(min-width: 1280px) 1280px, 100vw"
                     priority
                   />
