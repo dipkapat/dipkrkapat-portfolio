@@ -206,7 +206,7 @@ export function CaseStudy({ project, nextProject }: CaseStudyProps) {
             {project.highlight}
           </p>
           <div className="flex flex-wrap gap-4">
-            <Button href="#contact">Start a Conversation</Button>
+            <Button href="/#contact">Start a Conversation</Button>
             {nextProject && (
               <Button variant="secondary" href={`/work/${nextProject.slug}`}>
                 Next: {nextProject.name}

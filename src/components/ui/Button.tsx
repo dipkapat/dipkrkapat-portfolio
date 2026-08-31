@@ -51,8 +51,24 @@ export function Button({
     onClick?.();
   };
 
+  const isAnchorLink = href?.startsWith("#");
+
   if (href) {
     const isExternal = external || href.startsWith("http");
+
+    if (isAnchorLink) {
+      return (
+        <a
+          href={href}
+          className={classes}
+          aria-label={ariaLabel}
+          onClick={handleClick}
+        >
+          {children}
+        </a>
+      );
+    }
+
     return (
       <Link
         href={href}

@@ -22,19 +22,24 @@ export const navLinks: NavLink[] = [
 ];
 
 export const socialLinks: SocialLink[] = [
+	// {
+	// 	label: "Email",
+	// 	href: `mailto:${siteConfig.email}`,
+	// 	ariaLabel: `Email ${siteConfig.name}`,
+	// },
 	{
-		label: "Email",
-		href: `mailto:${siteConfig.email}`,
-		ariaLabel: `Email ${siteConfig.name}`,
+		label: "Whatsapp",
+		href: `https://wa.me/917439655501`,
+		ariaLabel: `Whatsapp ${siteConfig.name}`,
 	},
-	{
-		label: "LinkedIn",
-		href: "https://www.linkedin.com/in/dipkrkapat",
-		ariaLabel: `${siteConfig.name} on LinkedIn`,
-	},
+	// {
+	// 	label: "LinkedIn",
+	// 	href: "https://www.linkedin.com/in/dipkrkapat",
+	// 	ariaLabel: `${siteConfig.name} on LinkedIn`,
+	// },
 	{
 		label: "GitHub",
-		href: "https://github.com/dipkrkapat",
+		href: "https://github.com/thedumbappdev",
 		ariaLabel: `${siteConfig.name} on GitHub`,
 	},
 ];
