@@ -39,7 +39,7 @@ export function SelectedWork() {
 						id="work-heading"
 						eyebrow="03 / Selected Work"
 						title="Selected Work"
-						description="Five projects spanning brand, fintech, SaaS, and AI -each designed around real problems and shipped to production."
+						description="Five projects spanning brand, fintech, SaaS, and AI - each designed around real problems and shipped to production."
 					/>
 
 					{/* Carousel Track */}

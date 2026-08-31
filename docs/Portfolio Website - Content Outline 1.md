@@ -305,7 +305,7 @@ Enterprise interfaces, mobile/web UI, responsive systems, wireframes and high-fi
 
 ### Phase 03 - Product UI/UX + React Frontend
 
-**2020–Present**
+**2020–2026**
 
 Complex product interfaces, React-based development, design-to-code workflows and enterprise software.
 
@@ -469,7 +469,7 @@ Apex Division - Sr. Web/UI Designer
 
 Vawsum Schools - HTML/Web Designer
 
-### 2020–Present
+### 2020–2026
 
 Adhyan Digital - Sr. Frontend Developer / UI/UX
 

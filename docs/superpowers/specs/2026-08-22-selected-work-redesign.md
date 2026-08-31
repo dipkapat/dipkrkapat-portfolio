@@ -100,7 +100,7 @@ Dark mode: `rgba(0,0,0,0.15)`, `rgba(0,0,0,0.2)`, `rgba(0,0,0,0.25)` respectivel
         Selected Work
       </h2>
       <p class="mt-4 text-lg lg:text-xl text-fg-1 max-w-[60ch]">
-        Five projects spanning brand, fintech, SaaS, and AI -each designed around real problems and shipped to production.
+        Five projects spanning brand, fintech, SaaS, and AI - each designed around real problems and shipped to production.
       </p>
     </header>
 

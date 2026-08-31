@@ -18,7 +18,7 @@ Quick read on your positioning: you have two credible pillars - **18 years of pr
 
 ## 3. Experience Timeline
 
-- Adhyan Digital Pvt. Ltd. (Aug 2020–Present) gets the most space - this is your flagship: 25+ modules, one product, six years
+- Adhyan Digital Pvt. Ltd. (Aug 2020–2026) gets the most space - this is your flagship: 25+ modules, one product, six years
 - Collapse the pre-2020 roles (Vawsum, Apex Division, Max Mobility, Ericsson, Designclature, DPS, NetWest, Shiv Shakti, Skill Hut) into a compact scrolling list or accordion - dates + one line each. Don't give them equal visual weight to Adhyan; they're provenance, not proof points.
 - Consider a small "trajectory" visual (year markers) like your reference sites use - it visually sells the 18-year depth without a wall of text
 
