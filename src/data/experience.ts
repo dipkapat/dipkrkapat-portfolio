@@ -14,7 +14,7 @@ export const experiencePhases: ExperiencePhase[] = [
 			"Enterprise interfaces, mobile/web experiences, wireframes, prototypes, and high-fidelity UI.",
 	},
 	{
-		period: "2020–2026",
+		period: "2020–2026(April)",
 		title: "Product UI/UX & Frontend Development",
 		description:
 			"Complex product interfaces, React-based development, design-to-code workflows, enterprise software, and AI-assisted development.",

@@ -418,7 +418,7 @@ Web design, visual layouts, HTML/CSS, responsive interfaces, and production webs
 
 Enterprise interfaces, mobile/web experiences, wireframes, prototypes, and high-fidelity UI.
 
-**2020–2026**
+**2020–2026(April)**
 
 ### Product UI/UX & Frontend Development
 
