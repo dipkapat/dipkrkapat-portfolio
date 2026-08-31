@@ -109,7 +109,7 @@ export function Hero() {
 						<Reveal delay={0.24}>
 							<div className="mt-10 flex flex-wrap items-center gap-4">
 								<Button
-									href="#work"
+									href="/#work"
 									event="primary_cta_click"
 									eventPayload={{ cta: "view_work" }}
 									className="group relative overflow-hidden"

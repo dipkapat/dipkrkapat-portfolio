@@ -8,17 +8,17 @@ export const siteConfig = {
 	phone: ["+91 99033 59927", "+91 74396 55501"],
 	location: "Kolkata, West Bengal, India",
 	url: "https://dipkrkapat.com",
-	status: "Currently building at Adhyan Digital",
+	status: "Open to work opportunities",
 	description:
 		"Senior UI/UX Designer and Frontend Product Builder with 18+ years of experience. I design complex digital products and build the production-ready interfaces that bring them to life - from SaaS dashboards and AI tools to enterprise systems and marketing experiences.",
 	resumeUrl: "/resume/Dip-Kumar-Kapat-Resume.pdf",
 };
 
 export const navLinks: NavLink[] = [
-	{ label: "Work", href: "#work" },
-	{ label: "Capabilities", href: "#capabilities" },
-	{ label: "About", href: "#about" },
-	{ label: "Experience", href: "#experience" },
+	{ label: "Work", href: "/#work" },
+	{ label: "Capabilities", href: "/#capabilities" },
+	{ label: "About", href: "/#about" },
+	{ label: "Experience", href: "/#experience" },
 ];
 
 export const socialLinks: SocialLink[] = [

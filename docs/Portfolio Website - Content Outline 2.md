@@ -8,7 +8,7 @@ Quick read on your positioning: you have two credible pillars - **18 years of pr
 - One-line differentiator: 18+ years design, 5+ years React/Next.js, AI-accelerated workflow
 - Primary CTA: View Work / See Projects
 - Secondary CTA: Download Resume
-- Optional ambient detail (per your reference sites' taste): current status line ("Currently building at Adhyan Digital"), location/time chip (Kolkata)
+- Optional ambient detail (per your reference sites' taste): current status line ("Open to work opportunities"), location/time chip (Kolkata)
 
 ## 2. About
 

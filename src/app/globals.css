@@ -4,41 +4,104 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 /* Dark mode token overrides -explicit :root.dark wins over media query in imported tokens */
+:root {
+	--bg-0: #fafaf9; /* Canvas background - warm stone-cream */
+	--bg-1: #f5f5f4; /* Subtle section alternate */
+	--bg-2: #ffffff; /* Card surface - clean white for elevated layering */
+	--bg-3: #e7e5e4; /* Crisp borders */
+	--bg-4: #d6d3d1; /* Active/hover borders */
+
+	--fg-0: #1c1917; /* Primary text - deep slate-stone */
+	--fg-1: #57534e; /* Secondary text */
+	--fg-2: #78716c; /* Tertiary text */
+	--fg-3: #a8a29e; /* Disabled/placeholder */
+	--fg-4: #78716c;
+
+	--accent-0: #b45309; /* Warm amber/copper primary accent */
+	--accent-1: #92400e; /* Accent hover state */
+	--accent-2: #d97706; /* Medium amber */
+	--accent-3: #fef3c7; /* Soft amber background for badges */
+	--accent-4: #f59e0b;
+
+	--accent-ai: #6366f1; /* Indigo-violet */
+	--accent-ai-soft: #e0e7ff;
+	--accent-fin: #10b981;
+	--accent-fin-soft: #ecfdf5;
+	--accent-brand: #b45309;
+	--accent-brand-soft: #fef3c7;
+
+	--ring-0: #b45309;
+
+	/* Mappings for legacy colors used in components */
+	--background: var(--bg-0);
+	--surface: var(--bg-2);
+	--surface-muted: var(--bg-1);
+	--text-primary: var(--fg-0);
+	--text-secondary: var(--fg-1);
+	--text-tertiary: var(--fg-2);
+	--border: var(--bg-3);
+	--border-strong: var(--bg-4);
+	--accent: var(--accent-0);
+	--accent-soft: var(--accent-3);
+	--accent-strong: var(--accent-1);
+	--success: var(--success-0);
+	--warning: var(--warning-0);
+	--error: var(--error-0);
+	--ring: var(--ring-0);
+}
+
 :root.dark {
-	--bg-0: #0a0a0a;
-	--bg-1: #121212;
-	--bg-2: #1a1a1a;
-	--bg-3: #2a2a2a;
-	--bg-4: #3a3a3a;
+	--bg-0: #030303; /* Deep velvet black canvas */
+	--bg-1: #0a0b10; /* Sleek midnight slate alternate section */
+	--bg-2: #0e0f17; /* Elegant midnight card background */
+	--bg-3: rgba(255, 255, 255, 0.08); /* Crisp translucent borders */
+	--bg-4: rgba(255, 255, 255, 0.16); /* Hover border highlight */
 
-	--fg-0: #fafaf8;
-	--fg-1: #c8c7c0;
-	--fg-2: #9d9c94;
-	--fg-3: #6d6c66;
-	--fg-4: #e8e7e0;
+	--fg-0: #ffffff; /* Crisp white primary text */
+	--fg-1: #cbd5e1; /* Silver-slate secondary text */
+	--fg-2: #94a3b8; /* Muted slate tertiary text */
+	--fg-3: #64748b; /* Slate placeholder */
+	--fg-4: #e2e8f0;
 
-	--accent-0: #d4a574;
-	--accent-1: #e8c08a;
-	--accent-2: #b87333;
-	--accent-3: #2d1f12;
-	--accent-4: #f5d8b8;
+	--accent-0: #e5b869; /* Luxurious Champagne Gold primary accent */
+	--accent-1: #f0ce95; /* Bright gold hover state */
+	--accent-2: #cca043; /* Medium bronze-gold */
+	--accent-3: rgba(229, 184, 105, 0.08); /* Glowing gold aura bg */
+	--accent-4: #f7dfb3;
 
-	--accent-ai: #a78bff;
-	--accent-ai-soft: #1e1833;
-	--accent-fin: #34d399;
-	--accent-fin-soft: #06281e;
-	--accent-brand: #d4a574;
-	--accent-brand-soft: #2d1f12;
+	--accent-ai: #818cf8; /* Luminous neon indigo-violet */
+	--accent-ai-soft: rgba(129, 140, 248, 0.08);
+	--accent-fin: #34d399; /* Bright emerald */
+	--accent-fin-soft: rgba(52, 211, 153, 0.08);
+	--accent-brand: #e5b869;
+	--accent-brand-soft: rgba(229, 184, 105, 0.08);
 
-	--ring-0: #d4a574;
+	--ring-0: #e5b869;
 
-	--shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
-	--shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
-	--shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
-	--shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.5);
-	--shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.6);
-	--shadow-glow: 0 0 40px rgba(212, 165, 116, 0.15);
-	--shadow-glow-lg: 0 0 80px rgba(212, 165, 116, 0.2);
+	--shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.5);
+	--shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.6);
+	--shadow-md: 0 4px 16px rgba(0, 0, 0, 0.7);
+	--shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.8);
+	--shadow-xl: 0 16px 64px rgba(0, 0, 0, 0.9);
+	--shadow-glow: 0 0 30px rgba(229, 184, 105, 0.15);
+	--shadow-glow-lg: 0 0 60px rgba(229, 184, 105, 0.2);
+
+	/* Mappings for legacy colors under dark mode */
+	--background: var(--bg-0);
+	--surface: var(--bg-2);
+	--surface-muted: var(--bg-1);
+	--text-primary: var(--fg-0);
+	--text-secondary: var(--fg-1);
+	--text-tertiary: var(--fg-2);
+	--border: var(--bg-3);
+	--border-strong: var(--bg-4);
+	--accent: var(--accent-0);
+	--accent-soft: var(--accent-3);
+	--accent-strong: var(--accent-1);
+	--success: var(--success-0);
+	--warning: var(--warning-0);
+	--error: var(--error-0);
+	--ring: var(--ring-0);
 }
 
 @theme inline {

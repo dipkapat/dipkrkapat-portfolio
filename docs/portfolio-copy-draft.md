@@ -17,7 +17,7 @@ Senior UI/UX Designer & Frontend Developer. 18+ years designing web interfaces, 
 
 **CTAs:** View Work · Download Resume
 
-**Optional status chip:** Currently building at Adhyan Digital · Kolkata, India
+**Optional status chip:** Open to work opportunities · Kolkata, India
 
 ---
 
