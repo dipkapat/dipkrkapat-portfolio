@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, ArrowUpRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight, Download } from "lucide-react";
 import { siteConfig } from "@/data/site";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -139,6 +139,16 @@ export function Hero() {
 										className="relative z-10 size-4 stroke-[1.5] transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-[1px]"
 										aria-hidden="true"
 									/>
+								</Button>
+								<Button
+									variant="text"
+									href={siteConfig.resumeUrl}
+									download
+									event="download_resume"
+									ariaLabel="Download Resume"
+								>
+									<Download className="size-4 stroke-[1.5]" aria-hidden="true" />
+									<span>Download Resume</span>
 								</Button>
 							</div>
 						</Reveal>
