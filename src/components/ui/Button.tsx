@@ -18,6 +18,7 @@ interface ButtonProps {
   external?: boolean;
   event?: AnalyticsEvent;
   eventPayload?: Record<string, unknown>;
+  download?: boolean;
 }
 
 const baseStyles =
@@ -43,6 +44,7 @@ export function Button({
   external,
   event,
   eventPayload,
+  download,
 }: ButtonProps) {
   const classes = cn(baseStyles, variantStyles[variant], className);
 
@@ -63,6 +65,7 @@ export function Button({
           className={classes}
           aria-label={ariaLabel}
           onClick={handleClick}
+          download={download}
         >
           {children}
         </a>
@@ -76,6 +79,7 @@ export function Button({
         aria-label={ariaLabel}
         onClick={handleClick}
         {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+        download={download}
       >
         {children}
       </Link>

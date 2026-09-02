@@ -144,7 +144,7 @@ export function Hero() {
 									variant="text"
 									href={siteConfig.resumeUrl}
 									download
-									event="download_resume"
+									event="resume_download"
 									ariaLabel="Download Resume"
 								>
 									<Download className="size-4 stroke-[1.5]" aria-hidden="true" />
