@@ -39,7 +39,7 @@ export const socialLinks: SocialLink[] = [
 	// },
 	{
 		label: "GitHub",
-		href: "https://github.com/thedumbappdev",
+		href: "https://github.com/dipkapat",
 		ariaLabel: `${siteConfig.name} on GitHub`,
 	},
 ];
