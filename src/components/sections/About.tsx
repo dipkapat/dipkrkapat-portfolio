@@ -69,11 +69,11 @@ export function About() {
 
 					<div className="lg:col-span-5">
 						<Reveal delay={0.1} y={30}>
-							<div className="relative aspect-[4/5] overflow-hidden rounded-2xl border border-bg-3 bg-bg-2 p-1.5">
-								<div className="relative overflow-hidden rounded-[20px] bg-surface-muted">
-									<div className="relative h-full w-full overflow-hidden">
+							<div className="w-full h-[550px] relative aspect-[4/5] rounded-2xl border border-bg-3 bg-bg-2 p-1.5">
+								<div className="relative overflow-hidden rounded-[20px] bg-surface-muted h-full w-full">
+									<div className="relative overflow-hidden">
 										<motion.img
-											src="/images/profile1.jpg"
+											src="/images/dipkrkapat.png"
 											alt="Dip Kumar Kapat -Senior UI/UX Designer & Frontend Product Builder"
 											className="size-full object-cover transition-transform duration-700 ease-out"
 											whileHover={{ scale: 1.03 }}

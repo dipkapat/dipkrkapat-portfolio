@@ -65,6 +65,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: siteConfig.url,
   },
+  icons: {
+    icon: "/images/dipkrkapat.png",
+    shortcut: "/images/dipkrkapat.png",
+    apple: "/images/dipkrkapat.png",
+  },
 };
 
 export default function RootLayout({
