@@ -130,7 +130,7 @@ Show:
 **Usage states**  
 **Responsive product UI**
 
-The live project specifically demonstrates conversational generation, streaming responses, artifact preview, smart history, flexible AI controls and usage tracking. ([AI Content Studio](https://ai-content-generation-tool-iota.vercel.app/ "AI Content Studio - Generate, Refine, Create"))
+The live project specifically demonstrates conversational generation, streaming responses, artifact preview, smart history, flexible AI controls and usage tracking. ([AI Content Studio](https://ai-content-generation-tool-one.vercel.app/ "AI Content Studio - Generate, Refine, Create"))
 
 ### Positioning statement
 

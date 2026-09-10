@@ -85,7 +85,7 @@ A financial calculator handling multiple loan types, countries, and repayment st
 
 **Conversational AI Content Tool**
 A ChatGPT-style interface for generating and refining written content - streaming responses, an artifact preview panel with multiple view modes, and a full settings/usage dashboard. Built to demonstrate fluency with the conversational-AI UI patterns that are increasingly table stakes.
-[View project ↗](https://ai-content-generation-tool-iota.vercel.app/)
+[View project ↗](https://ai-content-generation-tool-one.vercel.app/)
 
 ### Saint's Paradise Cafeteria
 

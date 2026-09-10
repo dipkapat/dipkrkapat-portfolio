@@ -261,7 +261,7 @@ export const projects: Project[] = [
 			"An AI-powered content generation experience built around conversational interaction, streaming responses, workspace history, artifact previews, model settings, and usage visibility. The focus was on making an inherently complex AI workflow feel simple, predictable, and easy to navigate.",
 		role: ["Product UI/UX", "Interaction Design", "Frontend Development"],
 		stack: ["React", "Next.js", "TypeScript", "Tailwind CSS", "shadcn/ui"],
-		liveUrl: "https://ai-content-generation-tool-iota.vercel.app/",
+		liveUrl: "https://ai-content-generation-tool-one.vercel.app/",
 		image: {
 			src: "/work/AI-Content-Studio.png",
 			alt: "AI Content Studio conversational interface preview",
