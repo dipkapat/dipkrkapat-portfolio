@@ -33,24 +33,22 @@ export function About() {
 							<div className="mt-8 space-y-5 text-base leading-relaxed text-fg-1">
 								<p>
 									I have spent more than 18 years designing
-									for the web. What started with website
-									design and frontend implementation evolved
-									into UI/UX design, responsive product
-									interfaces, and complex enterprise
-									applications.
+									and building for the web. What started with
+									interface design evolved into product UI/UX,
+									frontend engineering, and complex enterprise
+									application work.
 								</p>
 								<p>
 									Over the years, I have worked across visual
-									design, wireframing, prototyping, frontend
-									development, design systems, and production
-									interfaces.
+									design, wireframing, prototyping, design
+									systems, frontend implementation, and
+									production-grade interfaces for real users.
 								</p>
 								<p>
-									Today, I bring those disciplines together -
-									designing products with a strong
-									understanding of how they should work, how
-									they should look, and how they should be
-									built.
+									Today, I bring those disciplines together:
+									designing product experiences and building
+									the interfaces that make them real in React
+									and Next.js.
 								</p>
 								<p className="font-medium text-fg-0">
 									I don&apos;t design in isolation from
@@ -60,7 +58,7 @@ export function About() {
 								</p>
 								<p className="text-fg-1">
 									My current focus is the intersection of
-									product UI/UX, frontend development, and
+									product UI/UX, frontend engineering, and
 									AI-assisted workflows.
 								</p>
 							</div>
@@ -74,7 +72,7 @@ export function About() {
 									<div className="relative overflow-hidden">
 										<motion.img
 											src="/images/dipkrkapat.png"
-											alt="Dip Kumar Kapat -Senior UI/UX Designer & Frontend Product Builder"
+											alt="Dip Kumar Kapat - Senior Frontend Engineer & Product UI/UX Specialist"
 											className="size-full object-cover transition-transform duration-700 ease-out"
 											whileHover={{ scale: 1.03 }}
 											initial={

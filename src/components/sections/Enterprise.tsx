@@ -19,13 +19,13 @@ export function Enterprise() {
 								eyebrow="04 / Enterprise Product Experience"
 								title={
 									<>
-										25+ modules.{" "}
+										25+ product modules.{" "}
 										<span className="font-serif font-normal italic text-fg-1">
-											One complex product ecosystem.
+											Built for real users.
 										</span>
 									</>
 								}
-								description="For an enterprise School Automation Software platform, I worked across the product ecosystem -from UI/UX design and prototyping through frontend implementation. The challenge was not designing individual screens. It was creating a consistent, scalable interface system across a large and interconnected product."
+								description="For an enterprise School Automation Software platform, I worked across the product ecosystem—from UI/UX design and prototyping through frontend implementation. The challenge was not just designing individual screens; it was creating a consistent, scalable interface system across a large and interconnected product used by staff, administrators, and end users."
 							/>
 							<p className="mt-6 font-mono text-xs uppercase tracking-[0.1em] text-accent-0">
 								25+ production-ready modules · UI/UX → Frontend

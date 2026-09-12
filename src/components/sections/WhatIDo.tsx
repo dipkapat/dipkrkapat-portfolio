@@ -16,14 +16,14 @@ export function WhatIDo() {
 			<Container>
 				<Reveal>
 					<SectionHeading
-						eyebrow="02 / What I Do"
-						title="What I bring to a product team"
-						description="Three disciplines, one integrated workflow -from first wireframe to shipped interface."
+						eyebrow="02 / How I Can Help"
+						title="Frontend execution with product thinking"
+						description="I help teams turn complex product ideas, interfaces, and design systems into clear, production-ready experiences."
 					/>
 				</Reveal>
 				<Reveal delay={0.1} y={30}>
 					<Stagger
-						className="mt-12 grid gap-6 md:grid-cols-3"
+						className="mt-12 grid gap-6 md:grid-cols-2 xl:grid-cols-5"
 						stagger={0.12}
 						direction="up"
 					>

@@ -8,7 +8,7 @@ export function personJsonLd(): string {
 		name: siteConfig.name,
 		url: siteConfig.url,
 		email: `mailto:${siteConfig.email}`,
-		jobTitle: "Senior UI/UX Designer & Frontend Product Builder",
+		jobTitle: "Senior Frontend Engineer & Product UI/UX Specialist",
 		worksFor: { "@type": "Organization", name: "Adhyan Digital Pvt. Ltd." },
 		address: {
 			"@type": "PostalAddress",

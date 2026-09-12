@@ -3,21 +3,33 @@ import type { Service, Principle } from "@/types";
 export const services: Service[] = [
 	{
 		index: "01",
-		title: "Product UI/UX",
+		title: "React / Next.js Development",
 		description:
-			"Designing interfaces that make complex products easier to understand and use. Wireframes, user flows, high-fidelity UI, responsive layouts, interaction patterns, dashboards, workflows, and product experiences.",
+			"Build responsive, production-ready interfaces for SaaS products, dashboards, and business applications using React, Next.js, TypeScript, and modern UI systems.",
 	},
 	{
 		index: "02",
-		title: "Frontend Development",
+		title: "Figma → React",
 		description:
-			"Turning design into scalable, production-ready interfaces. React, Next.js, Tailwind CSS, component-based UI, responsive implementation, interaction states, cross-browser compatibility, and design-to-code conversion.",
+			"Turn product designs, flows, and prototypes into accurate, scalable frontend components and responsive interfaces that are ready for production.",
 	},
 	{
 		index: "03",
-		title: "AI-Assisted Development",
+		title: "Product UI/UX for SaaS",
 		description:
-			"Using AI to accelerate the path from idea to interface. Claude Code and LLM-powered workflows help explore, structure, build, refine, and iterate faster while keeping design judgment and product thinking at the center.",
+			"Design clearer dashboards, workflows, forms, and enterprise interfaces that improve usability, reduce friction, and support product growth.",
+	},
+	{
+		index: "04",
+		title: "Frontend UI Modernization",
+		description:
+			"Improve an existing product’s visual quality, responsiveness, accessibility, consistency, and frontend architecture without losing product intent.",
+	},
+	{
+		index: "05",
+		title: "AI-Assisted Frontend Delivery",
+		description:
+			"Use AI-assisted workflows to accelerate prototyping, component development, refactoring, and iteration while keeping human product judgment at the center.",
 	},
 ];
 

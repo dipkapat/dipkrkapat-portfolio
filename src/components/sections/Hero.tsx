@@ -10,10 +10,10 @@ import { motion, useReducedMotion } from "framer-motion";
 import { useRef, useEffect } from "react";
 
 const proofPoints = [
-	{ value: "18+", label: "Years of experience" },
+	{ value: "18+", label: "Years in web/UI" },
 	{ value: "25+", label: "Enterprise modules" },
-	{ value: "React", label: "Next.js · TypeScript" },
-	{ value: "AI", label: "Assisted development" },
+	{ value: "5+", label: "Years React / Next.js" },
+	{ value: "5K–8K", label: "Users supported" },
 ];
 
 export function Hero() {
@@ -82,16 +82,17 @@ export function Hero() {
 									className="inline-block size-1.5 rounded-full bg-accent animate-pulse"
 									aria-hidden="true"
 								/>
-								Senior UI/UX Designer · Frontend Product Builder
+								Senior Frontend Engineer & Product UI/UX
+								Specialist
 							</p>
 						</Reveal>
 
 						<Reveal delay={0.08}>
 							<h1 className="font-display font-normal text-[3rem] leading-[1.02] tracking-tight text-fg-0 sm:text-6xl lg:text-[5rem] lg:leading-[1.0] max-w-[95%]">
-								I design complex digital products{" "}
+								I design and build production-ready SaaS,
+								dashboards, and complex web applications.
 								<span className="font-serif font-normal italic text-fg-1 block mt-2">
-									and build the interfaces that bring them to
-									life.
+									with React, Next.js and TypeScript.
 								</span>
 							</h1>
 						</Reveal>
@@ -99,10 +100,10 @@ export function Hero() {
 						<Reveal delay={0.16}>
 							<p className="mt-8 max-w-[52ch] text-base leading-relaxed text-fg-1 sm:text-lg lg:text-base">
 								18+ years across web design, product UI/UX, and
-								frontend development - combining product
-								thinking, visual precision, and modern frontend
-								technology to create clear, responsive,
-								production-ready experiences.
+								frontend engineering — building clear,
+								responsive, production-ready experiences from
+								Figma and UX flows through React and Next.js
+								implementation.
 							</p>
 						</Reveal>
 
@@ -115,7 +116,7 @@ export function Hero() {
 									className="group relative overflow-hidden"
 								>
 									<span className="relative z-10">
-										View Selected Work
+										View My Work
 									</span>
 									<ArrowRight
 										className="relative z-10 size-4 stroke-[1.5] transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-[1px]"
@@ -133,7 +134,7 @@ export function Hero() {
 									className="group"
 								>
 									<span className="relative z-10">
-										Get in Touch
+										Hire Me
 									</span>
 									<ArrowUpRight
 										className="relative z-10 size-4 stroke-[1.5] transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-[1px]"
@@ -147,7 +148,10 @@ export function Hero() {
 									event="resume_download"
 									ariaLabel="Download Resume"
 								>
-									<Download className="size-4 stroke-[1.5]" aria-hidden="true" />
+									<Download
+										className="size-4 stroke-[1.5]"
+										aria-hidden="true"
+									/>
 									<span>Download Resume</span>
 								</Button>
 							</div>
