@@ -25,7 +25,7 @@ export function Enterprise() {
 										</span>
 									</>
 								}
-								description="For an enterprise School Automation Software platform, I worked across the product ecosystem—from UI/UX design and prototyping through frontend implementation. The challenge was not just designing individual screens; it was creating a consistent, scalable interface system across a large and interconnected product used by staff, administrators, and end users."
+								description="For an enterprise School Automation Software platform, I worked across the product ecosystem - from UI/UX design and prototyping through frontend implementation. The challenge was not just designing individual screens; it was creating a consistent, scalable interface system across a large and interconnected product used by staff, administrators, and end users."
 							/>
 							<p className="mt-6 font-mono text-xs uppercase tracking-[0.1em] text-accent">
 								25+ production-ready modules · UI/UX → Frontend
