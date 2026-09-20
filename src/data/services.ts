@@ -3,33 +3,33 @@ import type { Service, Principle } from "@/types";
 export const services: Service[] = [
 	{
 		index: "01",
-		title: "React / Next.js Development",
+		title: "Product UI/UX Strategy",
 		description:
-			"Build responsive, production-ready interfaces for SaaS products, dashboards, and business applications using React, Next.js, TypeScript, and modern UI systems.",
+			"Clarify the user journey, tighten the experience, and design interfaces that help users act confidently inside complex SaaS and enterprise products.",
 	},
 	{
 		index: "02",
-		title: "Figma → React",
+		title: "Design-to-Code Delivery",
 		description:
-			"Turn product designs, flows, and prototypes into accurate, scalable frontend components and responsive interfaces that are ready for production.",
+			"Turn product design files, flows, and prototypes into scalable React and Next.js interfaces that stay faithful to the original intent and ship cleanly.",
 	},
 	{
 		index: "03",
-		title: "Product UI/UX for SaaS",
+		title: "SaaS Dashboard UX",
 		description:
-			"Design clearer dashboards, workflows, forms, and enterprise interfaces that improve usability, reduce friction, and support product growth.",
+			"Design and build dashboards, admin tools, and operational workflows that reduce friction, surface the right actions, and support busy teams at scale.",
 	},
 	{
 		index: "04",
-		title: "Frontend UI Modernization",
+		title: "Frontend Modernization",
 		description:
-			"Improve an existing product’s visual quality, responsiveness, accessibility, consistency, and frontend architecture without losing product intent.",
+			"Improve an existing product’s visual quality, responsiveness, accessibility, consistency, and frontend architecture without losing product intent or momentum.",
 	},
 	{
 		index: "05",
-		title: "AI-Assisted Frontend Delivery",
+		title: "AI-Assisted Product Iteration",
 		description:
-			"Use AI-assisted workflows to accelerate prototyping, component development, refactoring, and iteration while keeping human product judgment at the center.",
+			"Use AI-assisted workflows to accelerate prototypes, components, UX testing, and iteration while keeping product judgment, structure, and quality in the loop.",
 	},
 ];
 

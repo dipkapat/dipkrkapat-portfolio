@@ -19,7 +19,7 @@ export function Contact() {
 							<SectionHeading
 								eyebrow="12 / Contact"
 								title="Need a product interface that is clear, usable, and ready to ship?"
-								description="I help teams move from UX ambiguity and Figma to a production-ready frontend — combining product thinking, interface design, and React/Next.js execution in one workflow."
+								description="I help teams move from UX ambiguity and Figma to a production-ready frontend -combining product thinking, interface design, and React/Next.js execution in one workflow."
 							/>
 							<div className="mt-8 space-y-4">
 								<div>

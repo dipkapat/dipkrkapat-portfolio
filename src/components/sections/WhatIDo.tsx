@@ -17,8 +17,8 @@ export function WhatIDo() {
 				<Reveal>
 					<SectionHeading
 						eyebrow="02 / How I Can Help"
-						title="Frontend execution with product thinking"
-						description="I help teams turn complex product ideas, interfaces, and design systems into clear, production-ready experiences."
+						title="Product thinking. Frontend execution."
+						description="I help founders and product teams turn complex ideas into interfaces that are clear, scalable, and easy for users to trust."
 					/>
 				</Reveal>
 				<Reveal delay={0.1} y={30}>

@@ -38,8 +38,8 @@ export function SelectedWork() {
 					<SectionHeading
 						id="work-heading"
 						eyebrow="03 / Selected Work"
-						title="Selected Work"
-						description="Five projects spanning brand, fintech, SaaS, and AI - each designed around real problems and shipped to production."
+						title="Outcome-led product work"
+						description="A collection of customer-facing and internal products shaped around clarity, product thinking, and production-ready frontend execution."
 					/>
 
 					{/* Carousel Track */}

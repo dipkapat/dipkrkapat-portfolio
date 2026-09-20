@@ -31,9 +31,17 @@ function getPreferredTheme(): Theme {
 }
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-	const [theme, setTheme] = useState<Theme>(() => getPreferredTheme());
+	const [theme, setTheme] = useState<Theme>("light");
+	const [mounted, setMounted] = useState(false);
 
 	useEffect(() => {
+		setTheme(getPreferredTheme());
+		setMounted(true);
+	}, []);
+
+	useEffect(() => {
+		if (!mounted) return;
+
 		document.documentElement.classList.toggle("dark", theme === "dark");
 
 		try {
@@ -41,7 +49,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
 		} catch {
 			/* storage unavailable */
 		}
-	}, [theme]);
+	}, [mounted, theme]);
 
 	const toggleTheme = () =>
 		setTheme((prev) => (prev === "dark" ? "light" : "dark"));

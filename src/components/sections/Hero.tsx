@@ -100,7 +100,7 @@ export function Hero() {
 						<Reveal delay={0.16}>
 							<p className="mt-8 max-w-[52ch] text-base leading-relaxed text-fg-1 sm:text-lg lg:text-base">
 								18+ years across web design, product UI/UX, and
-								frontend engineering — building clear,
+								frontend engineering -building clear,
 								responsive, production-ready experiences from
 								Figma and UX flows through React and Next.js
 								implementation.

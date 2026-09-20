@@ -34,32 +34,36 @@ export function About() {
 								<p>
 									I have spent more than 18 years designing
 									and building for the web. What started with
-									interface design evolved into product UI/UX,
-									frontend engineering, and complex enterprise
-									application work.
+									visual interface work evolved into product
+									UI/UX, frontend engineering, and the craft
+									of shipping usable digital products at
+									scale.
 								</p>
 								<p>
-									Over the years, I have worked across visual
-									design, wireframing, prototyping, design
-									systems, frontend implementation, and
-									production-grade interfaces for real users.
+									Over the years, I have worked across product
+									design, prototyping, design systems,
+									frontend implementation, and enterprise
+									product work where clarity and execution
+									matter just as much as visual polish.
 								</p>
 								<p>
 									Today, I bring those disciplines together:
 									designing product experiences and building
-									the interfaces that make them real in React
-									and Next.js.
+									the interfaces that make them real in React,
+									Next.js, and production-ready frontend
+									systems.
 								</p>
 								<p className="font-medium text-fg-0">
 									I don&apos;t design in isolation from
-									implementation. If I hand you a screen, I
-									can also hand you the component that renders
-									it.
+									implementation. I think in flows, states,
+									and systems, then build the UI that makes
+									the product feel clear and trustworthy.
 								</p>
 								<p className="text-fg-1">
-									My current focus is the intersection of
-									product UI/UX, frontend engineering, and
-									AI-assisted workflows.
+									My current focus sits at the intersection of
+									product UI/UX, frontend engineering, and AI
+									workflow design - helping teams ship
+									smarter, cleaner digital experiences.
 								</p>
 							</div>
 						</Reveal>
