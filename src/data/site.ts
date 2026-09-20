@@ -2,23 +2,24 @@ import type { NavLink, SocialLink } from "@/types";
 
 export const siteConfig = {
 	name: "Dip Kumar Kapat",
-	role: "Senior UI/UX Designer · Frontend Product Builder",
-	roleShort: "UI/UX · Frontend · AI",
+	role: "Senior Frontend Engineer & Product UI/UX Specialist",
+	roleShort: "Frontend · UI/UX · React",
 	email: "dipkrkapat@protonmail.com",
 	phone: ["+91 99033 59927", "+91 74396 55501"],
 	location: "Kolkata, West Bengal, India",
 	url: "https://dipkumarkapat.com",
-	status: "Open to work opportunities",
+	status: "Available for remote full-time, contract, and freelance work",
 	description:
-		"Senior UI/UX Designer and Frontend Product Builder with 18+ years of experience. I design complex digital products and build the production-ready interfaces that bring them to life - from SaaS dashboards and AI tools to enterprise systems and marketing experiences.",
+		"Senior Frontend Engineer and Product UI/UX Specialist with 18+ years of experience designing and building production-ready interfaces for SaaS, dashboards, and complex enterprise web applications.",
 	resumeUrl: "/resume/Dip-Kumar-Kapat-Resume.pdf",
 };
 
 export const navLinks: NavLink[] = [
 	{ label: "Work", href: "/#work" },
-	{ label: "Capabilities", href: "/#capabilities" },
-	{ label: "About", href: "/#about" },
+	{ label: "Services", href: "/#capabilities" },
 	{ label: "Experience", href: "/#experience" },
+	{ label: "About", href: "/#about" },
+	{ label: "Contact", href: "/#contact" },
 ];
 
 export const socialLinks: SocialLink[] = [
@@ -46,9 +47,10 @@ export const socialLinks: SocialLink[] = [
 
 export const contactInquiryTypes = [
 	"Full-time role",
+	"Contract role",
+	"Freelance - React/Next.js development",
+	"Freelance - Figma → React",
 	"Freelance - UI/UX design",
-	"Freelance - Frontend development",
-	"Freelance - Design-to-code",
 	"Project collaboration",
 	"Other",
 ] as const;

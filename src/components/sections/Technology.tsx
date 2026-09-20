@@ -8,18 +8,17 @@ import { Reveal } from "@/components/motion/Reveal";
 
 export function Technology() {
 	return (
-		<section className="py-20 lg:py-28">
+		<section className="py-28 lg:py-40">
 			<Container>
 				<Reveal>
 					<SectionHeading
-						eyebrow="09 / Technology"
 						title="The tools behind the work."
-						description="Capability demonstrated through work first -the stack that carries it second."
+						description="Capability demonstrated through work first - the stack that carries it second."
 					/>
 				</Reveal>
 				<Reveal delay={0.1} y={30}>
 					<Stagger
-						className="mt-12 grid gap-6 md:grid-cols-2"
+						className="mt-14 grid gap-6 md:grid-cols-2"
 						stagger={0.1}
 						direction="up"
 					>
@@ -29,11 +28,11 @@ export function Technology() {
 								direction="up"
 								className="h-full"
 							>
-								<div className="rounded-2xl border border-bg-3 bg-bg-2 p-1.5 h-full">
+								<div className="rounded-2xl border border-bg-3 bg-bg-2 p-1.5 h-full transition-all duration-300 ease-out hover:border-accent/30 hover:shadow-card-hover">
 									<div className="rounded-[20px] bg-bg-0 p-6 sm:p-8 flex flex-col h-full">
-										<h3 className="font-mono text-xs uppercase tracking-[0.12em] text-accent-0">
+										<p className="font-mono text-xs uppercase tracking-[0.12em] text-accent">
 											{group.category}
-										</h3>
+										</p>
 										<p className="mt-4 text-base leading-loose text-fg-0">
 											{group.items.join(" · ")}
 										</p>

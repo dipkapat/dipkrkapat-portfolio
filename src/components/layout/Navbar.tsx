@@ -25,7 +25,7 @@ export function Navbar() {
         className={cn(
           "mx-auto flex h-16 w-full max-w-[1280px] items-center justify-between px-5 sm:px-8 lg:px-16",
           scrolled
-            ? "bg-bg-0/85 backdrop-blur-md border-b border-bg-3"
+            ? "bg-bg-0/85 backdrop-blur-xl border-b border-border"
             : "bg-transparent border-b border-transparent",
         )}
         aria-label="Main navigation"
@@ -38,7 +38,7 @@ export function Navbar() {
           <span className="font-ui text-sm font-semibold tracking-tight text-fg-0">
             {siteConfig.name.toUpperCase()}
           </span>
-          <span className="mt-1 font-mono text-[10px] uppercase tracking-[0.12em] text-fg-2 transition-colors group-hover:text-accent-0">
+          <span className="mt-1 font-mono text-[10px] uppercase tracking-[0.12em] text-fg-2 transition-colors duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] group-hover:text-accent">
             {siteConfig.roleShort}
           </span>
         </Link>
@@ -49,7 +49,7 @@ export function Navbar() {
               <li key={link.href}>
                 <a
                   href={link.href}
-                  className="text-sm font-medium text-fg-1 transition-colors duration-200 hover:text-fg-0"
+                  className="text-sm font-medium text-fg-1 transition-colors duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:text-fg-0"
                 >
                   {link.label}
                 </a>
@@ -60,9 +60,9 @@ export function Navbar() {
             <ThemeToggle />
             <Link
               href="#contact"
-              className="inline-flex items-center gap-1.5 rounded-sm bg-fg-0 px-4 py-2 text-sm font-medium text-bg-0 transition-all duration-200 hover:bg-accent-0 hover:shadow-glow group"
+              className="inline-flex items-center gap-1.5 rounded-sm bg-fg-0 px-4 py-2 text-sm font-medium text-bg-0 transition-all duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:bg-accent group"
             >
-              <span className="relative z-10">Let&apos;s Talk</span>
+              <span className="relative z-10">Hire Me</span>
               <ArrowUpRight
                 className="relative z-10 size-4 stroke-[1.5] transition-transform duration-300 ease-out group-hover:translate-x-1 group-hover:-translate-y-[1px]"
                 aria-hidden="true"

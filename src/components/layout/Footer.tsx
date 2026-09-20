@@ -56,7 +56,7 @@ export function Footer() {
                 >
                   <a
                     href={link.href}
-                    className="text-sm text-fg-1 transition-colors duration-200 hover:text-accent-0"
+                    className="text-sm text-fg-1 transition-colors duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:text-accent"
                   >
                     {link.label}
                   </a>
@@ -81,13 +81,13 @@ export function Footer() {
                 viewport={{ once: true }}
                 transition={{ duration: 0.3, delay: 0.1, ease: [0.22, 1, 0.36, 1] }}
               >
-                <a
-                  href={`mailto:${siteConfig.email}`}
-                  className="inline-flex items-center gap-1.5 text-sm text-fg-1 transition-colors duration-200 hover:text-accent-0"
-                >
-                  <Mail className="size-4" strokeWidth={1.5} aria-hidden="true" />
-                  {siteConfig.email}
-                </a>
+                  <a
+                    href={`mailto:${siteConfig.email}`}
+                    className="inline-flex items-center gap-1.5 text-sm text-fg-1 transition-colors duration-200 ease-[cubic-bezier(0.22,1,0.36,1)] hover:text-accent"
+                  >
+                    <Mail className="size-4" strokeWidth={1.5} aria-hidden="true" />
+                    {siteConfig.email}
+                  </a>
               </motion.li>
               {socialLinks.map((social, index) => (
                 <motion.li

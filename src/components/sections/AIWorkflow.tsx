@@ -12,18 +12,17 @@ export function AIWorkflow() {
 	const reduceMotion = useReducedMotion();
 
 	return (
-		<section className="border-t border-bg-3 bg-bg-1/40 py-20 lg:py-28">
+		<section className="border-t border-bg-3 bg-bg-1/40 py-28 lg:py-40">
 			<Container>
 				<Reveal>
 					<SectionHeading
-						eyebrow="06 / AI + Product Development"
 						title="AI accelerates the work. Design judgment drives it."
-						description="I use AI-assisted development tools as part of my product workflow -not as a replacement for design thinking, but as a way to move faster from exploration to execution."
+						description="I use AI-assisted development tools as part of my product workflow - not as a replacement for design thinking, but as a way to move faster from exploration to execution."
 					/>
 				</Reveal>
 
 				<Reveal delay={0.1} y={30}>
-					<div className="mt-12 rounded-2xl border border-bg-3 bg-bg-2 p-1.5">
+					<div className="mt-14 rounded-2xl border border-bg-3 bg-bg-2 p-1.5">
 						<div className="rounded-[20px] bg-bg-0 p-6 sm:p-8">
 							<p className="font-mono text-[11px] uppercase tracking-[0.12em] text-fg-2">
 								workflow / pipeline
@@ -59,7 +58,7 @@ export function AIWorkflow() {
 									</motion.div>
 								))}
 							</div>
-							<p className="mt-6 font-mono text-xs uppercase tracking-[0.08em] text-accent-0">
+							<p className="mt-6 font-mono text-xs uppercase tracking-[0.08em] text-accent">
 								AI makes the workflow faster. Experience makes
 								the decisions better.
 							</p>
@@ -82,9 +81,9 @@ export function AIWorkflow() {
 									ease: [0.22, 1, 0.36, 1],
 								}}
 								whileHover={{ scale: 1.01 }}
-								className="bg-bg-0 p-6 transition-colors hover:bg-accent-3"
+								className="bg-bg-0 p-6 transition-colors hover:bg-accent-soft"
 							>
-								<h3 className="font-mono text-sm font-medium uppercase tracking-[0.08em] text-accent-0">
+								<h3 className="font-mono text-sm font-medium uppercase tracking-[0.08em] text-fg-0">
 									{capability.label}
 								</h3>
 								<p className="mt-3 text-sm leading-relaxed text-fg-1">

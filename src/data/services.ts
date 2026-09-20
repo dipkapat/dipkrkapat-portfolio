@@ -3,21 +3,33 @@ import type { Service, Principle } from "@/types";
 export const services: Service[] = [
 	{
 		index: "01",
-		title: "Product UI/UX",
+		title: "Product UI/UX Strategy",
 		description:
-			"Designing interfaces that make complex products easier to understand and use. Wireframes, user flows, high-fidelity UI, responsive layouts, interaction patterns, dashboards, workflows, and product experiences.",
+			"Clarify the user journey, tighten the experience, and design interfaces that help users act confidently inside complex SaaS and enterprise products.",
 	},
 	{
 		index: "02",
-		title: "Frontend Development",
+		title: "Design-to-Code Delivery",
 		description:
-			"Turning design into scalable, production-ready interfaces. React, Next.js, Tailwind CSS, component-based UI, responsive implementation, interaction states, cross-browser compatibility, and design-to-code conversion.",
+			"Turn product design files, flows, and prototypes into scalable React and Next.js interfaces that stay faithful to the original intent and ship cleanly.",
 	},
 	{
 		index: "03",
-		title: "AI-Assisted Development",
+		title: "SaaS Dashboard UX",
 		description:
-			"Using AI to accelerate the path from idea to interface. Claude Code and LLM-powered workflows help explore, structure, build, refine, and iterate faster while keeping design judgment and product thinking at the center.",
+			"Design and build dashboards, admin tools, and operational workflows that reduce friction, surface the right actions, and support busy teams at scale.",
+	},
+	{
+		index: "04",
+		title: "Frontend Modernization",
+		description:
+			"Improve an existing product’s visual quality, responsiveness, accessibility, consistency, and frontend architecture without losing product intent or momentum.",
+	},
+	{
+		index: "05",
+		title: "AI-Assisted Product Iteration",
+		description:
+			"Use AI-assisted workflows to accelerate prototypes, components, UX testing, and iteration while keeping product judgment, structure, and quality in the loop.",
 	},
 ];
 

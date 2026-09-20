@@ -10,19 +10,18 @@ export function Testimonials() {
   if (testimonials.length === 0) return null;
 
   return (
-    <section className="border-t border-bg-3 py-20 lg:py-28">
+    <section className="border-t border-bg-3 py-28 lg:py-40">
       <Container>
         <Reveal>
           <SectionHeading
-            eyebrow="Testimonials"
             title="What teammates, stakeholders, and collaborators say."
           />
         </Reveal>
         <Reveal delay={0.1} y={30}>
-          <Stagger className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3" stagger={0.1} direction="up">
+          <Stagger className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3" stagger={0.1} direction="up">
             {testimonials.map((testimonial) => (
               <StaggerItem key={testimonial.person} direction="up">
-                <figure className="flex h-full flex-col rounded-2xl border border-bg-3 bg-bg-2 p-1.5">
+                <figure className="flex h-full flex-col rounded-2xl border border-bg-3 bg-bg-2 p-1.5 transition-all duration-300 ease-out hover:border-accent/30 hover:shadow-card-hover">
                   <div className="rounded-[20px] bg-bg-0 p-6 sm:p-8">
                     <blockquote className="flex-1 text-base leading-relaxed text-fg-1">
                       &ldquo;{testimonial.quote}&rdquo;

@@ -30,20 +30,18 @@ export function SelectedWork() {
 		<>
 			<section
 				id="work"
-				className="border-t border-bg-3 bg-bg-1/40 py-24 lg:py-32"
+				className="border-t border-bg-3 bg-bg-1/40 py-28 lg:py-40"
 				aria-labelledby="work-heading"
 			>
 				<Container>
-					{/* Section Header -consistent with other sections */}
 					<SectionHeading
 						id="work-heading"
-						eyebrow="03 / Selected Work"
-						title="Selected Work"
-						description="Five projects spanning brand, fintech, SaaS, and AI - each designed around real problems and shipped to production."
+						eyebrow="Selected Work"
+						title="Outcome-led product work"
+						description="A collection of customer-facing and internal products shaped around clarity, product thinking, and production-ready frontend execution."
 					/>
 
-					{/* Carousel Track */}
-					<Reveal delay={0.1} y={30} className="mt-12">
+					<Reveal delay={0.1} y={30} className="mt-14">
 						<div
 							className="carousel-track"
 							role="region"
@@ -66,7 +64,6 @@ export function SelectedWork() {
 						</div>
 					</Reveal>
 
-					{/* Mobile Scroll Hint */}
 					{showScrollHint && (
 						<motion.div
 							className="scroll-hint lg:hidden"
@@ -105,9 +102,8 @@ export function SelectedWork() {
 						</motion.div>
 					)}
 
-					{/* CTA */}
 					<motion.div
-						className="mt-16 text-center"
+						className="mt-20 text-center"
 						initial={{ opacity: 0, y: 20 }}
 						whileInView={{ opacity: 1, y: 0 }}
 						viewport={{ once: true }}
