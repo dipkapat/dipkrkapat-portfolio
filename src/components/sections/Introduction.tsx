@@ -6,11 +6,10 @@ import { Reveal } from "@/components/motion/Reveal";
 
 export function Introduction() {
 	return (
-		<section className="py-20 lg:py-28">
+		<section className="py-28 lg:py-40">
 			<Container>
 				<Reveal>
 					<SectionHeading
-						eyebrow="01 / Introduction"
 						title={
 							<>
 								Design thinking.{" "}
@@ -23,7 +22,7 @@ export function Introduction() {
 					/>
 				</Reveal>
 				<Reveal delay={0.1} y={30}>
-					<div className="mt-10 grid gap-8 lg:grid-cols-2">
+					<div className="mt-14 grid gap-8 lg:grid-cols-2">
 						<p className="text-lg leading-relaxed text-fg-1">
 							I work at the intersection of{" "}
 							<strong className="font-medium text-fg-0">

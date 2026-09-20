@@ -11,25 +11,34 @@ export function FinalCTA() {
 	const reduceMotion = useReducedMotion();
 
 	return (
-		<section className="py-20 lg:py-28">
+		<section className="py-28 lg:py-40">
 			<Container>
 				<Reveal>
-					<div className="relative overflow-hidden rounded-2xl border border-bg-3 bg-bg-2 p-1.5">
-						<div className="rounded-[20px] bg-bg-0 p-8 sm:p-14 lg:p-20">
-							<p className="font-mono text-xs uppercase tracking-[0.12em] text-accent-0">
+					<motion.div
+						className="relative overflow-hidden rounded-2xl border border-bg-3 bg-bg-2 p-1.5"
+						initial={
+							reduceMotion ? false : { opacity: 0, y: 20 }
+						}
+						whileInView={{ opacity: 1, y: 0 }}
+						viewport={{ once: true }}
+						transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+					>
+						<div className="rounded-[20px] bg-bg-0 p-10 sm:p-16 lg:p-24">
+							<p className="font-mono text-xs uppercase tracking-[0.12em] text-accent">
 								Have a product to build?
 							</p>
 							<motion.h2
 								initial={
 									reduceMotion ? false : { opacity: 0, y: 20 }
 								}
-								animate={{ opacity: 1, y: 0 }}
+								whileInView={{ opacity: 1, y: 0 }}
+								viewport={{ once: true }}
 								transition={{
 									duration: 0.5,
 									delay: 0.1,
 									ease: [0.22, 1, 0.36, 1],
 								}}
-								className="mt-5 max-w-3xl font-display font-normal text-3xl leading-tight tracking-tight text-fg-0 sm:text-4xl lg:text-5xl lg:leading-[1.05]"
+								className="mt-6 max-w-3xl font-display font-normal text-3xl leading-tight tracking-tight text-fg-0 sm:text-4xl lg:text-5xl lg:leading-[1.05]"
 							>
 								Let&apos;s turn product complexity into
 								something clearer, easier to use, and faster to
@@ -39,13 +48,14 @@ export function FinalCTA() {
 								initial={
 									reduceMotion ? false : { opacity: 0, y: 20 }
 								}
-								animate={{ opacity: 1, y: 0 }}
+								whileInView={{ opacity: 1, y: 0 }}
+								viewport={{ once: true }}
 								transition={{
 									duration: 0.5,
 									delay: 0.15,
 									ease: [0.22, 1, 0.36, 1],
 								}}
-								className="mt-5 max-w-xl text-base leading-relaxed text-fg-1"
+								className="mt-6 max-w-xl text-base leading-relaxed text-fg-1"
 							>
 								From UX thinking and interface design to
 								production-ready React and Next.js execution, I
@@ -56,13 +66,14 @@ export function FinalCTA() {
 								initial={
 									reduceMotion ? false : { opacity: 0, y: 20 }
 								}
-								animate={{ opacity: 1, y: 0 }}
+								whileInView={{ opacity: 1, y: 0 }}
+								viewport={{ once: true }}
 								transition={{
 									duration: 0.5,
 									delay: 0.2,
 									ease: [0.22, 1, 0.36, 1],
 								}}
-								className="mt-9 flex flex-wrap gap-4"
+								className="mt-10 flex flex-wrap gap-4"
 							>
 								<Button
 									href="#contact"
@@ -88,7 +99,7 @@ export function FinalCTA() {
 								</Button>
 							</motion.div>
 						</div>
-					</div>
+					</motion.div>
 				</Reveal>
 			</Container>
 		</section>

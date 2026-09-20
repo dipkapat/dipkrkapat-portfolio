@@ -10,13 +10,13 @@ export function Enterprise() {
 	const reduceMotion = useReducedMotion();
 
 	return (
-		<section className="border-t border-bg-3 bg-bg-1/40 py-20 lg:py-28">
+		<section className="border-t border-bg-3 bg-bg-1/40 py-28 lg:py-40">
 			<Container>
 				<div className="grid gap-12 lg:grid-cols-12">
 					<div className="lg:col-span-5">
 						<Reveal>
 							<SectionHeading
-								eyebrow="04 / Enterprise Product Experience"
+								eyebrow="Enterprise"
 								title={
 									<>
 										25+ product modules.{" "}
@@ -27,7 +27,7 @@ export function Enterprise() {
 								}
 								description="For an enterprise School Automation Software platform, I worked across the product ecosystem—from UI/UX design and prototyping through frontend implementation. The challenge was not just designing individual screens; it was creating a consistent, scalable interface system across a large and interconnected product used by staff, administrators, and end users."
 							/>
-							<p className="mt-6 font-mono text-xs uppercase tracking-[0.1em] text-accent-0">
+							<p className="mt-6 font-mono text-xs uppercase tracking-[0.1em] text-accent">
 								25+ production-ready modules · UI/UX → Frontend
 							</p>
 						</Reveal>
@@ -51,7 +51,7 @@ export function Enterprise() {
 											ease: [0.22, 1, 0.36, 1],
 										}}
 										whileHover={{ scale: 1.02 }}
-										className="bg-bg-0 px-4 py-4 transition-colors duration-200 hover:bg-accent-3"
+										className="bg-bg-0 px-4 py-5 transition-colors duration-200 hover:bg-accent-soft"
 									>
 										<span className="font-mono text-xs uppercase tracking-[0.08em] text-fg-0">
 											{module}

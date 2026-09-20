@@ -5,32 +5,32 @@
 
 /* Dark mode token overrides -explicit :root.dark wins over media query in imported tokens */
 :root {
-	--bg-0: #fafaf9; /* Canvas background - warm stone-cream */
-	--bg-1: #f5f5f4; /* Subtle section alternate */
+	--bg-0: #faf9f7; /* Canvas background - warm ivory */
+	--bg-1: #f3f1ed; /* Subtle section alternate */
 	--bg-2: #ffffff; /* Card surface - clean white for elevated layering */
-	--bg-3: #e7e5e4; /* Crisp borders */
-	--bg-4: #d6d3d1; /* Active/hover borders */
+	--bg-3: #e5e2dd; /* Crisp borders */
+	--bg-4: #d4d0ca; /* Active/hover borders */
 
-	--fg-0: #1c1917; /* Primary text - deep slate-stone */
-	--fg-1: #57534e; /* Secondary text */
-	--fg-2: #78716c; /* Tertiary text */
-	--fg-3: #a8a29e; /* Disabled/placeholder */
-	--fg-4: #78716c;
+	--fg-0: #1a1714; /* Primary text - warm near-black */
+	--fg-1: #54504b; /* Secondary text */
+	--fg-2: #7a756d; /* Tertiary text */
+	--fg-3: #a8a39b; /* Disabled/placeholder */
+	--fg-4: #7a756d;
 
-	--accent-0: #b45309; /* Warm amber/copper primary accent */
-	--accent-1: #92400e; /* Accent hover state */
-	--accent-2: #d97706; /* Medium amber */
-	--accent-3: #fef3c7; /* Soft amber background for badges */
-	--accent-4: #f59e0b;
+	--accent-0: #995c2b; /* Deep copper primary accent */
+	--accent-1: #7d4a1e; /* Accent hover state */
+	--accent-2: #c2772e; /* Medium copper */
+	--accent-3: #f5e8d8; /* Soft copper background */
+	--accent-4: #d4955a;
 
 	--accent-ai: #6366f1; /* Indigo-violet */
 	--accent-ai-soft: #e0e7ff;
 	--accent-fin: #10b981;
 	--accent-fin-soft: #ecfdf5;
-	--accent-brand: #b45309;
-	--accent-brand-soft: #fef3c7;
+	--accent-brand: #995c2b;
+	--accent-brand-soft: #f5e8d8;
 
-	--ring-0: #b45309;
+	--ring-0: #995c2b;
 
 	/* Mappings for legacy colors used in components */
 	--background: var(--bg-0);
@@ -51,40 +51,40 @@
 }
 
 :root.dark {
-	--bg-0: #030303; /* Deep velvet black canvas */
-	--bg-1: #0a0b10; /* Sleek midnight slate alternate section */
-	--bg-2: #0e0f17; /* Elegant midnight card background */
-	--bg-3: rgba(255, 255, 255, 0.08); /* Crisp translucent borders */
-	--bg-4: rgba(255, 255, 255, 0.16); /* Hover border highlight */
+	--bg-0: #050505; /* Deep velvet black canvas */
+	--bg-1: #0b0c10; /* Sleek midnight slate alternate section */
+	--bg-2: #101118; /* Elegant midnight card background */
+	--bg-3: rgba(255, 255, 255, 0.07); /* Crisp translucent borders */
+	--bg-4: rgba(255, 255, 255, 0.14); /* Hover border highlight */
 
-	--fg-0: #ffffff; /* Crisp white primary text */
-	--fg-1: #cbd5e1; /* Silver-slate secondary text */
-	--fg-2: #94a3b8; /* Muted slate tertiary text */
-	--fg-3: #64748b; /* Slate placeholder */
-	--fg-4: #e2e8f0;
+	--fg-0: #f7f5f2; /* Warm white primary text */
+	--fg-1: #c4c0b9; /* Silver-slate secondary text */
+	--fg-2: #8a857d; /* Muted slate tertiary text */
+	--fg-3: #5c5952; /* Slate placeholder */
+	--fg-4: #d4d0ca;
 
-	--accent-0: #e5b869; /* Luxurious Champagne Gold primary accent */
-	--accent-1: #f0ce95; /* Bright gold hover state */
-	--accent-2: #cca043; /* Medium bronze-gold */
-	--accent-3: rgba(229, 184, 105, 0.08); /* Glowing gold aura bg */
-	--accent-4: #f7dfb3;
+	--accent-0: #d4955a; /* Warm amber gold primary accent */
+	--accent-1: #e5a96e; /* Bright gold hover state */
+	--accent-2: #c2772e; /* Medium amber */
+	--accent-3: rgba(212, 149, 90, 0.08); /* Glowing gold aura bg */
+	--accent-4: #e8b872;
 
 	--accent-ai: #818cf8; /* Luminous neon indigo-violet */
 	--accent-ai-soft: rgba(129, 140, 248, 0.08);
 	--accent-fin: #34d399; /* Bright emerald */
 	--accent-fin-soft: rgba(52, 211, 153, 0.08);
-	--accent-brand: #e5b869;
-	--accent-brand-soft: rgba(229, 184, 105, 0.08);
+	--accent-brand: #d4955a;
+	--accent-brand-soft: rgba(212, 149, 90, 0.08);
 
-	--ring-0: #e5b869;
+	--ring-0: #d4955a;
 
 	--shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.5);
 	--shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.6);
 	--shadow-md: 0 4px 16px rgba(0, 0, 0, 0.7);
 	--shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.8);
 	--shadow-xl: 0 16px 64px rgba(0, 0, 0, 0.9);
-	--shadow-glow: 0 0 30px rgba(229, 184, 105, 0.15);
-	--shadow-glow-lg: 0 0 60px rgba(229, 184, 105, 0.2);
+	--shadow-glow: 0 0 30px rgba(212, 149, 90, 0.15);
+	--shadow-glow-lg: 0 0 60px rgba(212, 149, 90, 0.2);
 
 	/* Mappings for legacy colors under dark mode */
 	--background: var(--bg-0);
@@ -244,19 +244,29 @@
 	/* Soft Structuralism Shadow Tokens */
 	:root {
 		--shadow-card-outer:
-			0 4px 24px rgba(13, 13, 13, 0.04), 0 1px 3px rgba(13, 13, 13, 0.03);
-		--shadow-card-inner: 0 2px 8px rgba(13, 13, 13, 0.02);
+			0 1px 3px rgba(26, 23, 20, 0.04), 0 1px 2px rgba(26, 23, 20, 0.03);
+		--shadow-card-inner: 0 1px 2px rgba(26, 23, 20, 0.02);
 		--shadow-card-hover:
-			0 12px 48px rgba(13, 13, 13, 0.06),
-			0 4px 16px rgba(13, 13, 13, 0.04);
+			0 8px 32px rgba(26, 23, 20, 0.06),
+			0 2px 8px rgba(26, 23, 20, 0.04);
 	}
 
 	:root.dark {
 		--shadow-card-outer:
-			0 4px 24px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.1);
-		--shadow-card-inner: 0 2px 8px rgba(0, 0, 0, 0.1);
+			0 1px 3px rgba(0, 0, 0, 0.3), 0 1px 2px rgba(0, 0, 0, 0.2);
+		--shadow-card-inner: 0 1px 2px rgba(0, 0, 0, 0.15);
 		--shadow-card-hover:
-			0 12px 48px rgba(0, 0, 0, 0.25), 0 4px 16px rgba(0, 0, 0, 0.2);
+			0 8px 32px rgba(0, 0, 0, 0.25),
+			0 2px 8px rgba(0, 0, 0, 0.2);
+	}
+
+	/* Ambient glow tokens */
+	:root {
+		--glow-copper: radial-gradient(ellipse 60% 50% at 30% 0%, rgba(153, 92, 43, 0.06) 0%, transparent 70%);
+	}
+
+	:root.dark {
+		--glow-copper: radial-gradient(ellipse 60% 50% at 30% 0%, rgba(212, 149, 90, 0.05) 0%, transparent 70%);
 	}
 
 	/* Carousel / Scroll-Snap Utilities */

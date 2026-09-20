@@ -26,11 +26,10 @@ const proofPoints = [
 
 export function WhyWorkWithMe() {
   return (
-    <section className="py-20 lg:py-28">
+    <section className="py-28 lg:py-40">
       <Container>
         <Reveal>
           <SectionHeading
-            eyebrow="11 / Why Work With Me"
             title={
               <>
                 One person.{" "}
@@ -43,12 +42,12 @@ export function WhyWorkWithMe() {
           />
         </Reveal>
         <Reveal delay={0.1} y={30}>
-          <Stagger className="mt-12 grid gap-6 md:grid-cols-3" stagger={0.1} direction="up">
+          <Stagger className="mt-14 grid gap-6 md:grid-cols-3" stagger={0.1} direction="up">
             {proofPoints.map((point) => (
               <StaggerItem key={point.title} direction="up">
-                <div className="flex h-full flex-col rounded-2xl border border-bg-3 bg-bg-2 p-1.5">
+                <div className="flex h-full flex-col rounded-2xl border border-bg-3 bg-bg-2 p-1.5 transition-all duration-300 ease-out hover:border-accent/30 hover:shadow-card-hover">
                   <div className="rounded-[20px] bg-bg-0 p-6 sm:p-8">
-                    <p className="font-mono text-xs uppercase tracking-[0.12em] text-accent-0">
+                    <p className="font-mono text-xs uppercase tracking-[0.12em] text-accent">
                       {point.title}
                     </p>
                     <Stat value={point.value} label="" className="mt-6" />
