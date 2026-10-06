@@ -55,7 +55,7 @@ The site ships with clearly-labeled placeholders. Swap them when final assets ar
 
 1. **Project thumbnails** - replace the generated SVGs in `public/work/` with real images. Update the `image` field in `src/data/projects.ts` (an object with `src`, `alt`, and optional `caption`).
 2. **Portrait / avatar** - referenced from the About section; add the file to `public/` and update the reference in `src/components/sections/About.tsx`.
-3. **Resume PDF** - drop the PDF at `public/resume/Dip-Kumar-Kapat-Resume.pdf` (see `public/resume/README.md`).
+3. **Resume PDF** - drop the PDF at `public/resume/DipKrKapat-Resume.pdf` (see `public/resume/README.md`).
 4. **Testimonials** - the testimonials section renders only when entries exist in `src/data/testimonials.ts`. Add real quotes there to enable it.
 5. **Analytics** - implement the hook in `src/lib/analytics.ts` when a provider is chosen.
 

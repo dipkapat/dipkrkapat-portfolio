@@ -11,7 +11,7 @@ export const siteConfig = {
 	status: "Available for remote full-time, contract, and freelance work",
 	description:
 		"Senior Frontend Engineer and Product UI/UX Specialist with 18+ years of experience designing and building production-ready interfaces for SaaS, dashboards, and complex enterprise web applications.",
-	resumeUrl: "/resume/Dip-Kumar-Kapat-Resume.pdf",
+	resumeUrl: "/resume/DipKrKapat-Resume.pdf",
 };
 
 export const navLinks: NavLink[] = [
